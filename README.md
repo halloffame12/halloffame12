@@ -13,7 +13,7 @@
 - 🔭 Currently working on **[CodeCraftGames](https://codecraftgames.netlify.app/)**
 - 🌱 Learning **Machine Learning, Deep Learning & NLP**
 - 🤝 Open to collaborations on **innovative projects**
-- 👨‍💻 All my projects live here 👉 [Portfolio](https://halloffame12.github.io/myPortfolio/)
+- 👨‍💻 All my projects live here 👉 [Portfolio](sumitchauhandev.netlify.app)
 - 💬 Ask me about **Python, Flask, JavaScript, AI/ML, Full-Stack Development**
 - 📫 Reach me at **sumitchauhan10062004@gmail.com**
 - ⚡ Fun Fact: *I dream of exploring black holes & space 🚀🌌*
