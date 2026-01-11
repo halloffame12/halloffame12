@@ -10,13 +10,13 @@
 ---
 
 ### 🌟 About Me  
-- 🔭 Currently working on **[CodeCraftGames](https://codecraftgames.netlify.app/)**
+- 🔭 Currently working on **ForgeStack OS** — *an open-source platform to generate production-ready full-stack SaaS applications*
 - 🌱 Learning **Machine Learning, Deep Learning & NLP**
-- 🤝 Open to collaborations on **innovative projects**
+- 🤝 Open to collaborations on **innovative & open-source projects**
 - 👨‍💻 All my projects live here 👉 [Portfolio](https://sumitchauhandev.netlify.app/)
 - 💬 Ask me about **Python, Flask, JavaScript, AI/ML, Full-Stack Development**
 - 📫 Reach me at **sumitchauhan10062004@gmail.com**
-- ⚡ Fun Fact: *I dream of exploring black holes & space 🚀🌌*
+- ⚡ Fun Fact: *I dream of exploring black holes & space*
 
 ---
 
@@ -24,7 +24,7 @@
 <p align="left">
 <a href="https://twitter.com/sumit_7678" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" width="40"/></a>
 <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" width="40"/></a>
-<a href="https://instagram.com/sumit_chauhan_7678" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" width="40"/></a>
+<a href="https://instagram.com/sumitxdev" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" width="40"/></a>
 </p>
 
 ---
