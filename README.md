@@ -1,6 +1,6 @@
 <!-- Header -->
 <h1 align="center">🚀 Hey there, I'm <span style="color:#00C4FF;">Sumit Chauhan</span> 👋</h1>
-<h3 align="center">💻 Full-Stack Developer | 🤖 AI/ML Enthusiast | 🇮🇳 India</h3>
+<h3 align="center">💻 Full-Stack Developer | 🤖 AI/ML Enthusiast | 🎓 IIT Patna | 🇮🇳 India</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=halloffame12&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
@@ -10,6 +10,7 @@
 ---
 
 ### 🌟 About Me  
+- 🎓 **BS in Computer Science student at IIT Patna (2024–2028)**
 - 🔭 Currently working on **ForgeStack OS** — *an open-source platform to generate production-ready full-stack SaaS applications*
 - 🌱 Learning **Machine Learning, Deep Learning & NLP**
 - 🤝 Open to collaborations on **innovative & open-source projects**
