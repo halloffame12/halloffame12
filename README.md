@@ -73,16 +73,16 @@
     <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC88FF;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Subtitle with glow (Layer 3) -->
   <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
         font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
-        fill="#00C4FF" opacity="0.9">
+        fill="#00C4FF" opacity="1">
     Crafting Digital Experiences in the Cosmos 🌌
-    <animate attributeName="opacity" values="0;0.9" dur="3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/>
   </text>
   
   <!-- Floating Planet/Circle Decoration -->
@@ -1191,7 +1191,7 @@
   </path>
   
   <!-- Footer Text -->
-  <text x="50%" y="90%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" opacity="0.9">
+  <text x="50%" y="90%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" opacity="1">
     Made with ❤️ by Sumit Chauhan • Thanks for visiting! 🌌
   </text>
 </svg>
