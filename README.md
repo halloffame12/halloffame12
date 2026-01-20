@@ -1,4 +1,5 @@
 <!-- 3D Space-Themed Header with Animated Stars -->
+
 <div align="center">
   
 <!-- Custom 3D SVG Header with Depth and Parallax Effect -->
@@ -72,16 +73,16 @@
     <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC88FF;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Subtitle with glow (Layer 3) -->
   <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
         font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
-        fill="#00C4FF" opacity="0.9">
+        fill="#00C4FF" opacity="1">
     Crafting Digital Experiences in the Cosmos 🌌
-    <animate attributeName="opacity" values="0;0.9" dur="3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/>
   </text>
   
   <!-- Floating Planet/Circle Decoration -->
@@ -259,14 +260,14 @@
   </text>
   
   <!-- Bottom Section -->
-  <line x1="8%" y1="93%" x2="92%" y2="93%" stroke="#00C4FF" stroke-width="1" opacity="0.5"/>
+  <line x1="8%" y1="85%" x2="92%" y2="85%" stroke="#00C4FF" stroke-width="1" opacity="0.5"/>
   
-  <text x="50%" y="98%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" font-style="italic">
+  <text x="50%" y="91%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" font-style="italic">
     <tspan>🌌 Dream: Exploring black holes & space 🌌</tspan>
     <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
   </text>
   
-  <text x="50%" y="104%" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#00FFF0" font-style="italic">
+  <text x="50%" y="97%" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#00FFF0" font-style="italic">
     <tspan>🚀 Fun fact: I code by day, dream of cosmos by night</tspan>
   </text>
 </svg>
@@ -1190,7 +1191,7 @@
   </path>
   
   <!-- Footer Text -->
-  <text x="50%" y="90%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" opacity="0.9">
+  <text x="50%" y="90%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" opacity="1">
     Made with ❤️ by Sumit Chauhan • Thanks for visiting! 🌌
   </text>
 </svg>
