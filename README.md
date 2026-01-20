@@ -51,8 +51,7 @@ expertise:
 
 dream: "Exploring black holes & space 🌌"
 
-fun_fact: "I code during the day and dream 
-           about the cosmos at night 🚀"
+fun_fact: "I code by day, dream of cosmos by night 🚀"
 ```
 
 <br clear="both">
@@ -157,12 +156,9 @@ fun_fact: "I code during the day and dream
 </p>
 
 <!-- Contribution Snake Animation -->
+<!-- To enable this, add the GitHub Action workflow from: https://github.com/Platane/snk -->
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg">
-  </picture>
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 </p>
 
 <!-- Trophies Section -->
