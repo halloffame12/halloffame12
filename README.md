@@ -1,4 +1,4 @@
-# 
+# 👋 Sumit Chauhan - Full-Stack · Mobile · AI Engineer
 
 <div align="center">
 
@@ -423,10 +423,10 @@
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-halloffame12-181717?style=for-the-badge&logo=github)](https://github.com/halloffame12)
-[![Twitter](https://img.shields.io/badge/Twitter-@halloffame12-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/halloffame12)
+[![Twitter](https://img.shields.io/badge/Twitter-sumit_7678-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/sumit_7678)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sumit_Chauhan-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sumit-chauhan-a4ba98325/)
-[![Gmail](https://img.shields.io/badge/Gmail-Contact_Me-D14836?style=for-the-badge&logo=gmail)](mailto:sumitchauhan@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-4285F4?style=for-the-badge&logo=google-chrome)](https://halloffame12.github.io)
+[![Gmail](https://img.shields.io/badge/Gmail-Contact_Me-D14836?style=for-the-badge&logo=gmail)](mailto:sumitchauhan10062004@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-4285F4?style=for-the-badge&logo=google-chrome)](https://sumitchauhandev.netlify.app)
 
 </div>
 
