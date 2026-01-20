@@ -14,68 +14,211 @@
       </feMerge>
     </filter>
     
-    <!-- 3D Shadow Effect -->
-    <filter id="shadow3d">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-      <feOffset dx="4" dy="4" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.5"/>
+    <!-- Enhanced Multi-Layer 3D Shadow Effect with Depth -->
+    <filter id="shadow3d" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Far shadow layer for depth -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur1"/>
+      <feOffset in="blur1" dx="8" dy="8" result="offsetBlur1"/>
+      <feComponentTransfer in="offsetBlur1" result="shadow1">
+        <feFuncA type="linear" slope="0.2"/>
       </feComponentTransfer>
+      
+      <!-- Mid shadow layer -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur2"/>
+      <feOffset in="blur2" dx="5" dy="5" result="offsetBlur2"/>
+      <feComponentTransfer in="offsetBlur2" result="shadow2">
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      
+      <!-- Close shadow layer for definition -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur3"/>
+      <feOffset in="blur3" dx="3" dy="3" result="offsetBlur3"/>
+      <feComponentTransfer in="offsetBlur3" result="shadow3">
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      
+      <!-- Merge all shadow layers -->
+      <feMerge>
+        <feMergeNode in="shadow1"/>
+        <feMergeNode in="shadow2"/>
+        <feMergeNode in="shadow3"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 3D Emboss Effect with Light Source -->
+    <filter id="emboss3d" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Specular highlight (light from top-left) -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset in="blur" dx="-2" dy="-2" result="highlight"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.4" result="lightColor"/>
+      <feComposite in="lightColor" in2="highlight" operator="in" result="topHighlight"/>
+      
+      <!-- Shadow (from bottom-right) -->
+      <feOffset in="blur" dx="2" dy="2" result="shadow"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="shadow" operator="in" result="bottomShadow"/>
+      
+      <feMerge>
+        <feMergeNode in="bottomShadow"/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="topHighlight"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Perspective Depth Filter -->
+    <filter id="perspectiveDepth">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feOffset in="blur" dx="6" dy="6" result="offsetBlur"/>
+      <feComponentTransfer in="offsetBlur">
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1
+                                           0 0 0 0 0.2
+                                           0 0 0 0 0.4
+                                           0 0 0 1 0"/>
       <feMerge>
         <feMergeNode/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
-    <!-- Animated Stars -->
+    <!-- Enhanced Animated Stars with Parallax Depth -->
     <style>
       @keyframes twinkle {
         0%, 100% { opacity: 0.3; }
         50% { opacity: 1; }
       }
+      @keyframes twinkleDeep {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.5; }
+      }
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-10px); }
+      }
+      @keyframes floatDeep {
+        0%, 100% { transform: translateY(0px) scale(0.8); }
+        50% { transform: translateY(-5px) scale(0.8); }
+      }
+      @keyframes parallaxFloat {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(2px, -3px); }
+        50% { transform: translate(0, -5px); }
+        75% { transform: translate(-2px, -3px); }
+        100% { transform: translate(0, 0); }
       }
       @keyframes orbit {
         from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
         to { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
       }
+      @keyframes pulse3d {
+        0%, 100% { transform: scale(1); filter: brightness(1); }
+        50% { transform: scale(1.05); filter: brightness(1.2); }
+      }
+      @keyframes slideIn3d {
+        from { transform: perspective(500px) rotateX(20deg) translateY(-50px); opacity: 0; }
+        to { transform: perspective(500px) rotateX(0deg) translateY(0); opacity: 1; }
+      }
       .star { animation: twinkle 3s infinite; }
-      .star:nth-child(2n) { animation-delay: 1s; }
-      .star:nth-child(3n) { animation-delay: 2s; }
+      .star:nth-child(2n) { animation: twinkleDeep 4s infinite; animation-delay: 1s; }
+      .star:nth-child(3n) { animation: twinkle 5s infinite; animation-delay: 2s; }
+      .starDeep { animation: twinkleDeep 6s infinite; opacity: 0.2; }
       .floatingText { animation: float 3s ease-in-out infinite; }
+      .parallaxLayer { animation: parallaxFloat 8s ease-in-out infinite; }
+      .pulseGlow { animation: pulse3d 3s ease-in-out infinite; }
     </style>
   </defs>
   
-  <!-- Background Space Particles (Layer 1) -->
-  <circle class="star" cx="10%" cy="15%" r="1.5" fill="#00C4FF" opacity="0.3"/>
-  <circle class="star" cx="20%" cy="45%" r="1" fill="#B967FF" opacity="0.3"/>
-  <circle class="star" cx="35%" cy="25%" r="2" fill="#00FFF0" opacity="0.3"/>
-  <circle class="star" cx="50%" cy="70%" r="1.5" fill="#FF00FF" opacity="0.3"/>
-  <circle class="star" cx="65%" cy="35%" r="1" fill="#00C4FF" opacity="0.3"/>
-  <circle class="star" cx="80%" cy="60%" r="2" fill="#B967FF" opacity="0.3"/>
-  <circle class="star" cx="90%" cy="20%" r="1.5" fill="#00FFF0" opacity="0.3"/>
-  <circle class="star" cx="15%" cy="80%" r="1" fill="#FF00FF" opacity="0.3"/>
-  <circle class="star" cx="45%" cy="50%" r="1.5" fill="#00C4FF" opacity="0.3"/>
-  <circle class="star" cx="75%" cy="85%" r="1" fill="#B967FF" opacity="0.3"/>
+  <!-- Multi-Layered Background Space Particles for Depth -->
+  <!-- Far Background Layer (Deep Space) -->
+  <g opacity="0.3">
+    <circle class="starDeep" cx="8%" cy="10%" r="1" fill="#00C4FF"/>
+    <circle class="starDeep" cx="25%" cy="55%" r="0.8" fill="#B967FF"/>
+    <circle class="starDeep" cx="42%" cy="30%" r="1.2" fill="#00FFF0"/>
+    <circle class="starDeep" cx="58%" cy="75%" r="0.9" fill="#FF00FF"/>
+    <circle class="starDeep" cx="72%" cy="40%" r="0.7" fill="#00C4FF"/>
+    <circle class="starDeep" cx="88%" cy="65%" r="1.1" fill="#B967FF"/>
+    <circle class="starDeep" cx="15%" cy="85%" r="0.8" fill="#00FFF0"/>
+    <circle class="starDeep" cx="48%" cy="52%" r="0.9" fill="#FF00FF"/>
+  </g>
   
-  <!-- 3D Title with Depth (Layer 2) -->
-  <text x="50%" y="45%" text-anchor="middle" filter="url(#shadow3d)" 
+  <!-- Mid Layer (Background Particles - Layer 1) -->
+  <g opacity="0.5">
+    <circle class="star" cx="10%" cy="15%" r="1.5" fill="#00C4FF" opacity="0.3"/>
+    <circle class="star" cx="20%" cy="45%" r="1" fill="#B967FF" opacity="0.3"/>
+    <circle class="star" cx="35%" cy="25%" r="2" fill="#00FFF0" opacity="0.3"/>
+    <circle class="star" cx="50%" cy="70%" r="1.5" fill="#FF00FF" opacity="0.3"/>
+    <circle class="star" cx="65%" cy="35%" r="1" fill="#00C4FF" opacity="0.3"/>
+    <circle class="star" cx="80%" cy="60%" r="2" fill="#B967FF" opacity="0.3"/>
+    <circle class="star" cx="90%" cy="20%" r="1.5" fill="#00FFF0" opacity="0.3"/>
+    <circle class="star" cx="15%" cy="80%" r="1" fill="#FF00FF" opacity="0.3"/>
+    <circle class="star" cx="45%" cy="50%" r="1.5" fill="#00C4FF" opacity="0.3"/>
+    <circle class="star" cx="75%" cy="85%" r="1" fill="#B967FF" opacity="0.3"/>
+  </g>
+  
+  <!-- Foreground Layer (Bright Stars with Parallax) -->
+  <g class="parallaxLayer">
+    <circle cx="5%" cy="40%" r="2.5" fill="#00C4FF" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95%" cy="50%" r="2" fill="#B967FF" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="30%" cy="12%" r="2.2" fill="#00FFF0" opacity="0.6" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Gradient for 3D Text with Depth and Lighting -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="15%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="85%" style="stop-color:#7B5FFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B3088;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Specular highlight for glossy 3D effect -->
+    <radialGradient id="highlight1" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#00FFF0;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#00C4FF;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Enhanced 3D Title with Multi-Layer Depth (Layer 2) -->
+  <!-- Deep shadow layer -->
+  <text x="50%" y="45%" text-anchor="middle" 
         font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="url(#gradient1)">
+        fill="#000000" opacity="0.15" filter="url(#glow)">
+    <tspan dx="10" dy="10">Welcome to My Universe</tspan>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Mid shadow layer -->
+  <text x="50%" y="45%" text-anchor="middle" 
+        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="#000000" opacity="0.25">
+    <tspan dx="6" dy="6">Welcome to My Universe</tspan>
+  </text>
+  
+  <!-- Main text with gradient -->
+  <text x="50%" y="45%" text-anchor="middle" 
+        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="url(#gradient1)" class="pulseGlow">
     Welcome to My Universe
     <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
   </text>
   
-  <!-- Gradient for 3D Text -->
-  <defs>
-    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#CC88FF;stop-opacity:1" />
-    </linearGradient>
-  </defs>
+  <!-- Specular highlight overlay for glossy effect -->
+  <text x="50%" y="45%" text-anchor="middle" 
+        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="url(#highlight1)" opacity="0.5">
+    Welcome to My Universe
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </text>
   
   <!-- Subtitle with glow (Layer 3) -->
   <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
@@ -85,17 +228,46 @@
     <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/>
   </text>
   
-  <!-- Floating Planet/Circle Decoration -->
-  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#glow)" opacity="0.6">
+  <!-- Enhanced Floating Planet/Sphere with 3D Depth -->
+  <defs>
+    <radialGradient id="planetGradient" cx="35%" cy="35%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="20%" style="stop-color:#E0A0FF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="85%" style="stop-color:#7B2FFF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4A1888;stop-opacity:0.5" />
+    </radialGradient>
+    
+    <!-- Shadow for the planet -->
+    <radialGradient id="planetShadow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0" />
+      <stop offset="70%" style="stop-color:#000000;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Planet shadow (cast on background) -->
+  <ellipse cx="87%" cy="23%" rx="18" ry="6" fill="#000000" opacity="0.2" filter="url(#glow)">
+    <animate attributeName="cy" values="23%;28%;23%" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.15;0.2" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Main planet body with depth -->
+  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#perspectiveDepth)" opacity="0.8" class="pulseGlow">
     <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
   </circle>
   
-  <defs>
-    <radialGradient id="planetGradient">
-      <stop offset="0%" style="stop-color:#B967FF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7B2FFF;stop-opacity:0.5" />
-    </radialGradient>
-  </defs>
+  <!-- Specular highlight on planet -->
+  <circle cx="82%" cy="17%" r="6" fill="url(#highlight1)" opacity="0.7">
+    <animate attributeName="cy" values="17%;22%;17%" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Atmospheric glow around planet -->
+  <circle cx="85%" cy="20%" r="17" fill="none" stroke="#B967FF" stroke-width="0.5" opacity="0.3" filter="url(#glow)">
+    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
 </svg>
 
 </div>
@@ -198,23 +370,48 @@
       <stop offset="100%" style="stop-color:#00FFF0;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Floating Animation -->
+    <!-- Enhanced Floating Animation with Perspective -->
     <style>
       @keyframes cardFloat {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-8px); }
+        0% { transform: perspective(1000px) translateY(0px) rotateX(0deg); }
+        25% { transform: perspective(1000px) translateY(-4px) rotateX(1deg); }
+        50% { transform: perspective(1000px) translateY(-8px) rotateX(0deg); }
+        75% { transform: perspective(1000px) translateY(-4px) rotateX(-1deg); }
+        100% { transform: perspective(1000px) translateY(0px) rotateX(0deg); }
+      }
+      @keyframes cardGlowPulse {
+        0%, 100% { filter: brightness(1) drop-shadow(0 0 10px rgba(185, 103, 255, 0.3)); }
+        50% { filter: brightness(1.1) drop-shadow(0 0 20px rgba(185, 103, 255, 0.5)); }
       }
       .floatingCard {
         animation: cardFloat 4s ease-in-out infinite;
+        transform-origin: center center;
       }
     </style>
   </defs>
   
-  <!-- Shadow Layer -->
-  <rect x="3%" y="5%" width="94%" height="90%" rx="15" fill="#000" opacity="0.3" filter="url(#cardShadow)"/>
+  <!-- Multi-Layer Shadow for Enhanced Depth -->
+  <!-- Far shadow (diffuse) -->
+  <rect x="5%" y="8%" width="94%" height="90%" rx="15" fill="#000" opacity="0.15" filter="url(#cardShadow)">
+    <animate attributeName="opacity" values="0.12;0.18;0.12" dur="4s" repeatCount="indefinite"/>
+  </rect>
   
-  <!-- Main Card with Border -->
+  <!-- Mid shadow -->
+  <rect x="3.5%" y="6%" width="94%" height="90%" rx="15" fill="#000" opacity="0.2" filter="url(#cardShadow)"/>
+  
+  <!-- Close shadow (sharp) -->
+  <rect x="3%" y="5%" width="94%" height="90%" rx="15" fill="#000" opacity="0.25"/>
+  
+  <!-- Main Card with Enhanced Border and Inner Glow -->
+  <!-- Inner shadow for depth -->
+  <rect x="2%" y="2%" width="96%" height="96%" rx="15" fill="#000" opacity="0.3"/>
+  
+  <!-- Card body with gradient -->
   <rect class="floatingCard" x="2%" y="2%" width="96%" height="96%" rx="15" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="2" filter="url(#cardGlow)"/>
+  
+  <!-- Inner highlight for beveled edge effect -->
+  <rect x="2.5%" y="2.5%" width="95%" height="1%" rx="15" fill="url(#cardBorder)" opacity="0.3"/>
+  <rect x="2.5%" y="2.5%" width="1%" height="95%" rx="15" fill="url(#cardBorder)" opacity="0.2"/>
   
   <!-- Title -->
   <text x="50%" y="15%" text-anchor="middle" font-family="'Fira Code', monospace" font-size="26" font-weight="bold" fill="#00C4FF">
@@ -523,26 +720,60 @@
 <!-- 3D Progress Bars with Depth Effect -->
 <svg width="90%" height="400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Progress Bar Gradients -->
+    <!-- Enhanced Gradients with Lighting for 3D Bars -->
     <linearGradient id="prog1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#66D9FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#0077FF;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="prog1Top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
+    </linearGradient>
+    
     <linearGradient id="prog2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#D4A0FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#7B2FFF;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="prog2Top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
+    </linearGradient>
+    
     <linearGradient id="prog3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#66FFF9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00FFF0;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#00C4B0;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="prog3Top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#00FFF0;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
+    </linearGradient>
+    
     <linearGradient id="prog4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FF66FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#CC00CC;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="prog4Top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
+    </linearGradient>
+    
     <linearGradient id="prog5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFE666;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prog5Top" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2" />
     </linearGradient>
     
     <!-- Glow for progress bars -->
@@ -555,55 +786,180 @@
     </filter>
   </defs>
   
-  <!-- Programming Languages - 95% -->
+  <!-- Programming Languages - 95% with Enhanced 3D Effect -->
   <text x="5%" y="10%" font-family="'Courier New', monospace" font-size="16" fill="#00C4FF" font-weight="bold">
     💻 Programming Languages
   </text>
-  <rect x="5%" y="12%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#00C4FF" stroke-width="1"/>
+  
+  <!-- Track shadow (depth) -->
+  <rect x="5.5%" y="12.5%" width="85%" height="25" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Track background -->
+  <rect x="5%" y="12%" width="85%" height="25" rx="5" fill="#0f1729" stroke="#00C4FF" stroke-width="1"/>
+  
+  <!-- Inner shadow on track -->
+  <rect x="5%" y="12%" width="85%" height="3" rx="5" fill="#000000" opacity="0.4"/>
+  
+  <!-- Progress bar shadow -->
+  <rect x="5.3%" y="12.3%" width="80.75%" height="25" rx="5" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main progress bar -->
   <rect x="5%" y="12%" width="80.75%" height="25" rx="5" fill="url(#prog1)" filter="url(#barGlow)">
     <animate attributeName="width" from="0%" to="80.75%" dur="2s" fill="freeze"/>
   </rect>
-  <text x="88%" y="15.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">95%</text>
   
-  <!-- Mobile Development - 90% -->
+  <!-- Top highlight for glossy 3D effect -->
+  <rect x="5%" y="12%" width="80.75%" height="12" rx="5" fill="url(#prog1Top)" opacity="0.6">
+    <animate attributeName="width" from="0%" to="80.75%" dur="2s" fill="freeze"/>
+  </rect>
+  
+  <!-- Specular highlight (gleam) -->
+  <rect x="5%" y="13%" width="15%" height="6" rx="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="width" from="0%" to="15%" dur="2s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="88%" y="15.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff" filter="url(#glow)">95%</text>
+  
+  <!-- Mobile Development - 90% with Enhanced 3D Effect -->
   <text x="5%" y="26%" font-family="'Courier New', monospace" font-size="16" fill="#B967FF" font-weight="bold">
     📱 Mobile Development
   </text>
-  <rect x="5%" y="28%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#B967FF" stroke-width="1"/>
+  
+  <!-- Track shadow -->
+  <rect x="5.5%" y="28.5%" width="85%" height="25" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Track background -->
+  <rect x="5%" y="28%" width="85%" height="25" rx="5" fill="#0f1729" stroke="#B967FF" stroke-width="1"/>
+  
+  <!-- Inner shadow on track -->
+  <rect x="5%" y="28%" width="85%" height="3" rx="5" fill="#000000" opacity="0.4"/>
+  
+  <!-- Progress bar shadow -->
+  <rect x="5.3%" y="28.3%" width="76.5%" height="25" rx="5" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main progress bar -->
   <rect x="5%" y="28%" width="76.5%" height="25" rx="5" fill="url(#prog2)" filter="url(#barGlow)">
     <animate attributeName="width" from="0%" to="76.5%" dur="2.2s" fill="freeze"/>
   </rect>
-  <text x="88%" y="31.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">90%</text>
   
-  <!-- Web Development - 90% -->
+  <!-- Top highlight -->
+  <rect x="5%" y="28%" width="76.5%" height="12" rx="5" fill="url(#prog2Top)" opacity="0.6">
+    <animate attributeName="width" from="0%" to="76.5%" dur="2.2s" fill="freeze"/>
+  </rect>
+  
+  <!-- Specular highlight -->
+  <rect x="5%" y="29%" width="14%" height="6" rx="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="width" from="0%" to="14%" dur="2.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="88%" y="31.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff" filter="url(#glow)">90%</text>
+  
+  <!-- Web Development - 90% with Enhanced 3D Effect -->
   <text x="5%" y="42%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0" font-weight="bold">
     🌐 Web Development
   </text>
-  <rect x="5%" y="44%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#00FFF0" stroke-width="1"/>
+  
+  <!-- Track shadow -->
+  <rect x="5.5%" y="44.5%" width="85%" height="25" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Track background -->
+  <rect x="5%" y="44%" width="85%" height="25" rx="5" fill="#0f1729" stroke="#00FFF0" stroke-width="1"/>
+  
+  <!-- Inner shadow on track -->
+  <rect x="5%" y="44%" width="85%" height="3" rx="5" fill="#000000" opacity="0.4"/>
+  
+  <!-- Progress bar shadow -->
+  <rect x="5.3%" y="44.3%" width="76.5%" height="25" rx="5" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main progress bar -->
   <rect x="5%" y="44%" width="76.5%" height="25" rx="5" fill="url(#prog3)" filter="url(#barGlow)">
     <animate attributeName="width" from="0%" to="76.5%" dur="2.4s" fill="freeze"/>
   </rect>
-  <text x="88%" y="47.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">90%</text>
   
-  <!-- AI & Machine Learning - 80% -->
+  <!-- Top highlight -->
+  <rect x="5%" y="44%" width="76.5%" height="12" rx="5" fill="url(#prog3Top)" opacity="0.6">
+    <animate attributeName="width" from="0%" to="76.5%" dur="2.4s" fill="freeze"/>
+  </rect>
+  
+  <!-- Specular highlight -->
+  <rect x="5%" y="45%" width="14%" height="6" rx="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="width" from="0%" to="14%" dur="2.4s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="88%" y="47.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff" filter="url(#glow)">90%</text>
+  
+  <!-- AI & Machine Learning - 80% with Enhanced 3D Effect -->
   <text x="5%" y="58%" font-family="'Courier New', monospace" font-size="16" fill="#FF00FF" font-weight="bold">
     🤖 AI & Machine Learning
   </text>
-  <rect x="5%" y="60%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#FF00FF" stroke-width="1"/>
+  
+  <!-- Track shadow -->
+  <rect x="5.5%" y="60.5%" width="85%" height="25" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Track background -->
+  <rect x="5%" y="60%" width="85%" height="25" rx="5" fill="#0f1729" stroke="#FF00FF" stroke-width="1"/>
+  
+  <!-- Inner shadow on track -->
+  <rect x="5%" y="60%" width="85%" height="3" rx="5" fill="#000000" opacity="0.4"/>
+  
+  <!-- Progress bar shadow -->
+  <rect x="5.3%" y="60.3%" width="68%" height="25" rx="5" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main progress bar -->
   <rect x="5%" y="60%" width="68%" height="25" rx="5" fill="url(#prog4)" filter="url(#barGlow)">
     <animate attributeName="width" from="0%" to="68%" dur="2.6s" fill="freeze"/>
   </rect>
-  <text x="88%" y="63.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">80%</text>
   
-  <!-- Cloud & DevOps - 85% -->
+  <!-- Top highlight -->
+  <rect x="5%" y="60%" width="68%" height="12" rx="5" fill="url(#prog4Top)" opacity="0.6">
+    <animate attributeName="width" from="0%" to="68%" dur="2.6s" fill="freeze"/>
+  </rect>
+  
+  <!-- Specular highlight -->
+  <rect x="5%" y="61%" width="13%" height="6" rx="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="width" from="0%" to="13%" dur="2.6s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="88%" y="63.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff" filter="url(#glow)">80%</text>
+  
+  <!-- Cloud & DevOps - 85% with Enhanced 3D Effect -->
   <text x="5%" y="74%" font-family="'Courier New', monospace" font-size="16" fill="#FFD700" font-weight="bold">
     ☁️ Cloud & DevOps
   </text>
-  <rect x="5%" y="76%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- Track shadow -->
+  <rect x="5.5%" y="76.5%" width="85%" height="25" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Track background -->
+  <rect x="5%" y="76%" width="85%" height="25" rx="5" fill="#0f1729" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- Inner shadow on track -->
+  <rect x="5%" y="76%" width="85%" height="3" rx="5" fill="#000000" opacity="0.4"/>
+  
+  <!-- Progress bar shadow -->
+  <rect x="5.3%" y="76.3%" width="72.25%" height="25" rx="5" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main progress bar -->
   <rect x="5%" y="76%" width="72.25%" height="25" rx="5" fill="url(#prog5)" filter="url(#barGlow)">
     <animate attributeName="width" from="0%" to="72.25%" dur="2.8s" fill="freeze"/>
   </rect>
-  <text x="88%" y="79.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">85%</text>
+  
+  <!-- Top highlight -->
+  <rect x="5%" y="76%" width="72.25%" height="12" rx="5" fill="url(#prog5Top)" opacity="0.6">
+    <animate attributeName="width" from="0%" to="72.25%" dur="2.8s" fill="freeze"/>
+  </rect>
+  
+  <!-- Specular highlight -->
+  <rect x="5%" y="77%" width="13.5%" height="6" rx="3" fill="#ffffff" opacity="0.4">
+    <animate attributeName="width" from="0%" to="13.5%" dur="2.8s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <text x="88%" y="79.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff" filter="url(#glow)">85%</text>
 </svg>
 
 </div>
