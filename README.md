@@ -37,21 +37,21 @@
 ```yaml
 name: Sumit Chauhan
 located_in: India 🇮🇳
-education: 
-  - "BS in Computer Science @ IIT Patna (2024-2028)"
 
-current_focus: 
-  - "🔭 Building ForgeStack OS"
-  - "📚 Learning ML, DL & NLP"
+education:
+  - BS in Computer Science @ IIT Patna (2024-2028)
+
+current_focus:
+  - 🔭 Building ForgeStack OS
+  - 📚 Learning ML, DL & NLP
   
-expertise: 
-  - "Full-Stack Development"
-  - "AI/ML Engineering"
-  - "Open Source Contribution"
+expertise:
+  - Full-Stack Development
+  - AI/ML Engineering
+  - Open Source Contribution
 
-dream: "Exploring black holes & space 🌌"
-
-fun_fact: "I code by day, dream of cosmos by night 🚀"
+dream: Exploring black holes & space 🌌
+fun_fact: I code by day, dream of cosmos by night 🚀
 ```
 
 <br clear="both">
@@ -156,9 +156,13 @@ fun_fact: "I code by day, dream of cosmos by night 🚀"
 </p>
 
 <!-- Contribution Snake Animation -->
-<!-- To enable this, add the GitHub Action workflow from: https://github.com/Platane/snk -->
+<!-- Note: Run the snake.yml workflow to generate the animation, then it will appear below -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" />
+  </picture>
 </p>
 
 <!-- Trophies Section -->
