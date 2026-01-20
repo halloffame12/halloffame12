@@ -1,4 +1,5 @@
 <!-- 3D Space-Themed Header with Animated Stars -->
+
 <div align="center">
   
 <!-- Custom 3D SVG Header with Depth and Parallax Effect -->
@@ -259,14 +260,14 @@
   </text>
   
   <!-- Bottom Section -->
-  <line x1="8%" y1="93%" x2="92%" y2="93%" stroke="#00C4FF" stroke-width="1" opacity="0.5"/>
+  <line x1="8%" y1="88%" x2="92%" y2="88%" stroke="#00C4FF" stroke-width="1" opacity="0.5"/>
   
-  <text x="50%" y="98%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" font-style="italic">
+  <text x="50%" y="93%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" font-style="italic">
     <tspan>🌌 Dream: Exploring black holes & space 🌌</tspan>
     <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
   </text>
   
-  <text x="50%" y="104%" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#00FFF0" font-style="italic">
+  <text x="50%" y="98%" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#00FFF0" font-style="italic">
     <tspan>🚀 Fun fact: I code by day, dream of cosmos by night</tspan>
   </text>
 </svg>
