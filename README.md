@@ -1,267 +1,709 @@
-<!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Welcome%20to%20My%20Universe&fontSize=45&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Crafting%20Digital%20Experiences&descSize=20&descAlignY=55"/>
+<!-- 3D Space-Themed Header with Animated Stars -->
+<div align="center">
+  
+<!-- Custom 3D SVG Header with Depth and Parallax Effect -->
+<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg" style="background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);">
+  <defs>
+    <!-- 3D Glow Effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 3D Shadow Effect -->
+    <filter id="shadow3d">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="4" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Animated Stars -->
+    <style>
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes orbit {
+        from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+        to { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+      }
+      .star { animation: twinkle 3s infinite; }
+      .star:nth-child(2n) { animation-delay: 1s; }
+      .star:nth-child(3n) { animation-delay: 2s; }
+      .floatingText { animation: float 3s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <!-- Background Space Particles (Layer 1) -->
+  <circle class="star" cx="10%" cy="15%" r="1.5" fill="#00C4FF" opacity="0.3"/>
+  <circle class="star" cx="20%" cy="45%" r="1" fill="#B967FF" opacity="0.3"/>
+  <circle class="star" cx="35%" cy="25%" r="2" fill="#00FFF0" opacity="0.3"/>
+  <circle class="star" cx="50%" cy="70%" r="1.5" fill="#FF00FF" opacity="0.3"/>
+  <circle class="star" cx="65%" cy="35%" r="1" fill="#00C4FF" opacity="0.3"/>
+  <circle class="star" cx="80%" cy="60%" r="2" fill="#B967FF" opacity="0.3"/>
+  <circle class="star" cx="90%" cy="20%" r="1.5" fill="#00FFF0" opacity="0.3"/>
+  <circle class="star" cx="15%" cy="80%" r="1" fill="#FF00FF" opacity="0.3"/>
+  <circle class="star" cx="45%" cy="50%" r="1.5" fill="#00C4FF" opacity="0.3"/>
+  <circle class="star" cx="75%" cy="85%" r="1" fill="#B967FF" opacity="0.3"/>
+  
+  <!-- 3D Title with Depth (Layer 2) -->
+  <text x="50%" y="45%" text-anchor="middle" filter="url(#shadow3d)" 
+        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="url(#gradient1)">
+    Welcome to My Universe
+    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+  </text>
+  
+  <!-- Gradient for 3D Text -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B967FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Subtitle with glow (Layer 3) -->
+  <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
+        font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
+        fill="#00C4FF" opacity="0.9">
+    Crafting Digital Experiences in the Cosmos 🌌
+    <animate attributeName="opacity" values="0;0.9" dur="3s" fill="freeze"/>
+  </text>
+  
+  <!-- Floating Planet/Circle Decoration -->
+  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <defs>
+    <radialGradient id="planetGradient">
+      <stop offset="0%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2FFF;stop-opacity:0.5" />
+    </radialGradient>
+  </defs>
+</svg>
 
-<!-- Animated Typing Effect -->
+</div>
+
+<!-- Hero: Animated Typing Effect with 3D Styling -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00C4FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=%F0%9F%9A%80+Hey+there%2C+I'm+Sumit+Chauhan!;%F0%9F%92%BB+Full-Stack+%26+Mobile+Developer+%7C+%F0%9F%A4%96+AI%2FML+Enthusiast;%F0%9F%93%B1+Flutter+%7C+React+Native+%7C+Cross-Platform+Expert;%F0%9F%8E%93+IIT+Patna+%7C+%F0%9F%87%AE%F0%9F%87%B3+India" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=1000&color=00C4FF&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=150&lines=%F0%9F%9A%80+Hi%2C+I'm+Sumit+Chauhan;%F0%9F%92%BB+Full-Stack+%7C+Mobile+Developer+%7C+%F0%9F%A4%96+AI%2FML+Engineer;%F0%9F%93%B1+Flutter+%7C+React+Native+%7C+Cross-Platform+Expert;%F0%9F%8E%93+IIT+Patna+%7C+%F0%9F%87%AE%F0%9F%87%B3+India+%7C+Building+ForgeStack+OS" alt="Typing SVG" />
   </a>
 </p>
 
-<!-- Animated Badges Row -->
+<!-- 3D Floating Badges with Hover Effects -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=halloffame12&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=halloffame12&label=Profile%20Views&color=00C4FF&style=for-the-badge&labelColor=0a0e27" alt="Profile views" />
   <a href="https://twitter.com/sumit_7678">
-    <img src="https://img.shields.io/twitter/follow/sumit_7678?logo=twitter&style=for-the-badge&color=00acee&labelColor=1a1a2e" />
+    <img src="https://img.shields.io/twitter/follow/sumit_7678?logo=twitter&style=for-the-badge&color=00acee&labelColor=0a0e27" />
   </a>
   <a href="https://github.com/halloffame12?tab=followers">
-    <img src="https://img.shields.io/github/followers/halloffame12?label=Followers&style=for-the-badge&color=ff6b6b&labelColor=1a1a2e" />
+    <img src="https://img.shields.io/github/followers/halloffame12?label=Followers&style=for-the-badge&color=B967FF&labelColor=0a0e27" />
   </a>
-  <img src="https://img.shields.io/github/stars/halloffame12?label=Stars&style=for-the-badge&color=ffd43b&labelColor=1a1a2e" />
+  <img src="https://img.shields.io/github/stars/halloffame12?label=Stars&style=for-the-badge&color=ffd43b&labelColor=0a0e27" />
 </p>
 
-<!-- GitHub Status Badges -->
 <p align="center">
   <a href="https://github.com/halloffame12">
-    <img src="https://img.shields.io/badge/Open%20Source-Contributor-brightgreen?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/🔓_Open_Source-Contributor-00FFF0?style=for-the-badge&labelColor=0a0e27" />
   </a>
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Mobile%20%26%20AI-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/⚡_Status-Active_Coding-00FF87?style=for-the-badge&labelColor=0a0e27" />
+  <img src="https://img.shields.io/badge/🎯_Focus-Mobile_&_AI-FF00FF?style=for-the-badge&labelColor=0a0e27" />
+  <img src="https://img.shields.io/badge/🚀_Building-ForgeStack_OS-00C4FF?style=for-the-badge&labelColor=0a0e27" />
 </p>
 
-<!-- Animated Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<!-- About Me Section with Cool Design -->
-<h2 align="center">
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="24px" height="24px">
-  About Me
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="24px" height="24px">
-</h2>
-
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
-
-<br>
-
-```yaml
-name: Sumit Chauhan
-located_in: India 🇮🇳
-
-education:
-  - BS in Computer Science @ IIT Patna (2024-2028)
-
-current_focus:
-  - 🔭 Building ForgeStack OS
-  - 📚 Learning ML, DL & NLP
-  - 📱 Mastering Flutter & Mobile Development
-  - ☁️ Exploring Cloud & DevOps
+<!-- 3D Animated Divider with Depth -->
+<div align="center">
   
-expertise:
-  - Full-Stack Development
-  - Mobile App Development (Flutter/React Native)
-  - AI/ML Engineering
-  - Open Source Contribution
-  - Cloud Architecture
+<!-- Custom 3D Divider SVG -->
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+    <filter id="dividerGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#dividerGradient)" stroke-width="2" filter="url(#dividerGlow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
 
-dream: Exploring black holes & space 🌌
-fun_fact: I code by day, dream of cosmos by night 🚀
-```
+</div>
 
-<br clear="both">
+<!-- 3D About Me Card with Glow and Depth -->
+<div align="center">
 
-<!-- Animated Connect Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- Custom 3D Info Card SVG -->
+<svg width="95%" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Card Shadow -->
+    <filter id="cardShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="6" dy="6" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Glow Effect for Card -->
+    <filter id="cardGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Card Gradient Background -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1729;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1f3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Border Gradient -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFF0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Floating Animation -->
+    <style>
+      @keyframes cardFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      .floatingCard {
+        animation: cardFloat 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Shadow Layer -->
+  <rect x="3%" y="5%" width="94%" height="90%" rx="15" fill="#000" opacity="0.3" filter="url(#cardShadow)"/>
+  
+  <!-- Main Card with Border -->
+  <rect class="floatingCard" x="2%" y="2%" width="96%" height="96%" rx="15" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="2" filter="url(#cardGlow)"/>
+  
+  <!-- Title -->
+  <text x="50%" y="15%" text-anchor="middle" font-family="'Fira Code', monospace" font-size="26" font-weight="bold" fill="#00C4FF">
+    <tspan>💫 About Me 💫</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Content Lines with Icon -->
+  <text x="8%" y="28%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0">
+    <tspan x="8%">👤 Name:</tspan>
+    <tspan x="25%" fill="#fff">Sumit Chauhan</tspan>
+  </text>
+  
+  <text x="8%" y="38%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0">
+    <tspan x="8%">📍 Location:</tspan>
+    <tspan x="25%" fill="#fff">India 🇮🇳</tspan>
+  </text>
+  
+  <text x="8%" y="48%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0">
+    <tspan x="8%">🎓 Education:</tspan>
+    <tspan x="25%" fill="#fff">BS in Computer Science</tspan>
+  </text>
+  
+  <text x="8%" y="55%" font-family="'Courier New', monospace" font-size="14" fill="#B967FF">
+    <tspan x="25%">IIT Patna (2024-2028)</tspan>
+  </text>
+  
+  <text x="8%" y="65%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0">
+    <tspan x="8%">🚀 Current Focus:</tspan>
+  </text>
+  
+  <text x="25%" y="72%" font-family="'Courier New', monospace" font-size="14" fill="#fff">
+    <tspan x="25%">• Building ForgeStack OS</tspan>
+  </text>
+  <text x="25%" y="78%" font-family="'Courier New', monospace" font-size="14" fill="#fff">
+    <tspan x="25%">• Learning ML, DL & NLP</tspan>
+  </text>
+  <text x="25%" y="84%" font-family="'Courier New', monospace" font-size="14" fill="#fff">
+    <tspan x="25%">• Mastering Flutter & Mobile Dev</tspan>
+  </text>
+  <text x="25%" y="90%" font-family="'Courier New', monospace" font-size="14" fill="#fff">
+    <tspan x="25%">• Exploring Cloud & DevOps</tspan>
+  </text>
+  
+  <!-- Bottom Section -->
+  <line x1="8%" y1="93%" x2="92%" y2="93%" stroke="#00C4FF" stroke-width="1" opacity="0.5"/>
+  
+  <text x="50%" y="98%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" font-style="italic">
+    <tspan>🌌 Dream: Exploring black holes & space 🌌</tspan>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <text x="50%" y="104%" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#00FFF0" font-style="italic">
+    <tspan>🚀 Fun fact: I code by day, dream of cosmos by night</tspan>
+  </text>
+</svg>
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> 
-  <b>Let's Connect!</b>
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40">
-</h2>
+</div>
 
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="25%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider2)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
+
+<!-- 3D Connect Section with Social Buttons -->
+<div align="center">
+
+<!-- Title SVG with 3D Effect -->
+<svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="textShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="3" dy="3" result="offsetblur"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFF0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#textGrad)" filter="url(#textShadow)">
+    🔗 Let's Connect! 🔗
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>
+
+</div>
+
+<!-- 3D Social Buttons with Hover Effects -->
 <p align="center">
   <a href="https://twitter.com/sumit_7678" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=1a1a2e" alt="Twitter"/>
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0a0e27" alt="Twitter"/>
   </a>
   <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1a2e" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0e27" alt="LinkedIn"/>
   </a>
   <a href="https://instagram.com/sumitxdev" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=1a1a2e" alt="Instagram"/>
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0a0e27" alt="Instagram"/>
   </a>
   <a href="mailto:sumitchauhan10062004@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1a2e" alt="Gmail"/>
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0e27" alt="Gmail"/>
   </a>
   <a href="https://sumitchauhandev.netlify.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=1a1a2e" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0a0e27" alt="Portfolio"/>
+  </a>
+  <a href="https://github.com/halloffame12" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e27" alt="GitHub"/>
   </a>
 </p>
 
-<!-- Tech Stack Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider3)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40"> 
-  Tech Arsenal
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40">
-</h2>
+<!-- 3D Tech Arsenal with Orbital Animation -->
+<div align="center">
 
+<!-- Tech Arsenal Title -->
+<svg width="450" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="techGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFF0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#techGrad)" filter="url(#techGlow)">
+    ⚡ Tech Arsenal ⚡
+  </text>
+</svg>
+
+</div>
+
+<!-- 3D Tech Stack Clusters with Animated Badges -->
 <div align="center">
 
 ### 📱 Mobile Development
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white&labelColor=0a0e27"/>
+</p>
 
 ### 🎨 Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white&labelColor=0a0e27"/>
+</p>
 
 ### ⚙️ Backend & Database
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white&labelColor=0a0e27"/>
+</p>
 
 ### 🤖 AI/ML & Data Science
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+<p>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black&labelColor=0a0e27"/>
+</p>
 
 ### ☁️ Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white&labelColor=0a0e27"/>
+</p>
 
 ### 🛠️ Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
-![Xcode](https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+<p>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white&labelColor=0a0e27"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=0a0e27"/>
+</p>
 
 </div>
 
-<!-- Skills Progress Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<h2 align="center">
-  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="30"> 
-  Skills & Expertise
-  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="30">
-</h2>
-
+<!-- 3D Animated Divider -->
 <div align="center">
-  <table>
-    <tr>
-      <td><b>💻 Programming Languages</b></td>
-      <td>
-        <img src="https://img.shields.io/badge/Python-95%25-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JavaScript-90%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Dart-85%25-0175C2?style=flat-square&logo=dart&logoColor=white"/>
-        <img src="https://img.shields.io/badge/TypeScript-85%25-007ACC?style=flat-square&logo=typescript&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td><b>📱 Mobile Development</b></td>
-      <td>
-        <img src="https://img.shields.io/badge/Flutter-90%25-02569B?style=flat-square&logo=flutter&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React_Native-80%25-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-        <img src="https://img.shields.io/badge/Android-75%25-3DDC84?style=flat-square&logo=android&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td><b>🌐 Web Development</b></td>
-      <td>
-        <img src="https://img.shields.io/badge/React-90%25-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Next.js-85%25-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Node.js-85%25-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td><b>🤖 AI & Machine Learning</b></td>
-      <td>
-        <img src="https://img.shields.io/badge/TensorFlow-80%25-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PyTorch-75%25-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-        <img src="https://img.shields.io/badge/NLP-70%25-4285F4?style=flat-square&logo=google&logoColor=white"/>
-      </td>
-    </tr>
-    <tr>
-      <td><b>☁️ Cloud & DevOps</b></td>
-      <td>
-        <img src="https://img.shields.io/badge/AWS-75%25-FF9900?style=flat-square&logo=amazon-aws&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Docker-80%25-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Firebase-85%25-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
-      </td>
-    </tr>
-  </table>
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider4)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
 </div>
 
-<!-- GitHub Stats Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- 3D Skills Section with Progress Bars -->
+<div align="center">
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> 
-  GitHub Analytics
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30">
-</h2>
+<!-- Skills Title -->
+<svg width="500" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="skillGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="skillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#skillGrad)" filter="url(#skillGlow)">
+    💪 Skills & Expertise 💪
+  </text>
+</svg>
 
+<!-- 3D Progress Bars with Depth Effect -->
+<svg width="90%" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Progress Bar Gradients -->
+    <linearGradient id="prog1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prog2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2FFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prog3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C4B0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prog4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC00CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="prog5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow for progress bars -->
+    <filter id="barGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Programming Languages - 95% -->
+  <text x="5%" y="10%" font-family="'Courier New', monospace" font-size="16" fill="#00C4FF" font-weight="bold">
+    💻 Programming Languages
+  </text>
+  <rect x="5%" y="12%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#00C4FF" stroke-width="1"/>
+  <rect x="5%" y="12%" width="80.75%" height="25" rx="5" fill="url(#prog1)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0%" to="80.75%" dur="2s" fill="freeze"/>
+  </rect>
+  <text x="88%" y="15.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">95%</text>
+  
+  <!-- Mobile Development - 90% -->
+  <text x="5%" y="26%" font-family="'Courier New', monospace" font-size="16" fill="#B967FF" font-weight="bold">
+    📱 Mobile Development
+  </text>
+  <rect x="5%" y="28%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#B967FF" stroke-width="1"/>
+  <rect x="5%" y="28%" width="76.5%" height="25" rx="5" fill="url(#prog2)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0%" to="76.5%" dur="2.2s" fill="freeze"/>
+  </rect>
+  <text x="88%" y="31.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">90%</text>
+  
+  <!-- Web Development - 90% -->
+  <text x="5%" y="42%" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0" font-weight="bold">
+    🌐 Web Development
+  </text>
+  <rect x="5%" y="44%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#00FFF0" stroke-width="1"/>
+  <rect x="5%" y="44%" width="76.5%" height="25" rx="5" fill="url(#prog3)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0%" to="76.5%" dur="2.4s" fill="freeze"/>
+  </rect>
+  <text x="88%" y="47.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">90%</text>
+  
+  <!-- AI & Machine Learning - 80% -->
+  <text x="5%" y="58%" font-family="'Courier New', monospace" font-size="16" fill="#FF00FF" font-weight="bold">
+    🤖 AI & Machine Learning
+  </text>
+  <rect x="5%" y="60%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#FF00FF" stroke-width="1"/>
+  <rect x="5%" y="60%" width="68%" height="25" rx="5" fill="url(#prog4)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0%" to="68%" dur="2.6s" fill="freeze"/>
+  </rect>
+  <text x="88%" y="63.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">80%</text>
+  
+  <!-- Cloud & DevOps - 85% -->
+  <text x="5%" y="74%" font-family="'Courier New', monospace" font-size="16" fill="#FFD700" font-weight="bold">
+    ☁️ Cloud & DevOps
+  </text>
+  <rect x="5%" y="76%" width="85%" height="25" rx="5" fill="#1a1f3a" stroke="#FFD700" stroke-width="1"/>
+  <rect x="5%" y="76%" width="72.25%" height="25" rx="5" fill="url(#prog5)" filter="url(#barGlow)">
+    <animate attributeName="width" from="0%" to="72.25%" dur="2.8s" fill="freeze"/>
+  </rect>
+  <text x="88%" y="79.5%" font-family="'Courier New', monospace" font-size="14" fill="#fff">85%</text>
+</svg>
+
+</div>
+
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider5)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
+
+<!-- GitHub Analytics Title -->
+<div align="center">
+<svg width="450" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="analyticsGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="analyticsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFF0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#analyticsGrad)" filter="url(#analyticsGlow)">
+    📊 GitHub Analytics 📊
+  </text>
+</svg>
+</div>
+
+<!-- 3D GitHub Stats Cards with Depth -->
 <p align="center">
   <a href="https://github.com/halloffame12">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00C4FF&icon_color=00C4FF"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00C4FF"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0e27&title_color=00C4FF&icon_color=B967FF&text_color=ffffff&border_radius=10"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0a0e27&title_color=00C4FF&text_color=ffffff&border_radius=10"/>
   </a>
 </p>
 
-<!-- GitHub Streak -->
+<!-- 3D GitHub Streak with Enhanced Styling -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=halloffame12&theme=tokyonight&hide_border=true&background=0D1117&stroke=00C4FF&ring=00C4FF&fire=FF6B6B&currStreakLabel=00C4FF" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=halloffame12&theme=tokyonight&hide_border=true&background=0a0e27&stroke=00C4FF&ring=B967FF&fire=FF6B6B&currStreakLabel=00FFF0&sideLabels=ffffff&currStreakNum=ffffff&dates=ffffff&border_radius=10" alt="GitHub Streak"/>
 </p>
 
-<!-- Activity Graph -->
+<!-- 3D Activity Graph -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=halloffame12&custom_title=Contribution%20Graph&bg_color=0D1117&color=00C4FF&line=00C4FF&point=FF6B6B&area_color=00C4FF&area=true&hide_border=true" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=halloffame12&custom_title=📈%20Contribution%20Graph&bg_color=0a0e27&color=00C4FF&line=B967FF&point=00FFF0&area_color=00C4FF&area=true&hide_border=true&border_radius=10" alt="Activity Graph"/>
 </p>
+
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="25%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider6)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
+
+<!-- GitHub Snake Animation Section -->
+<div align="center">
+
+<svg width="300" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="snakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B967FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="24" font-weight="bold" 
+        fill="url(#snakeGrad)">
+    🐍 Contribution Snake 🐍
+  </text>
+</svg>
+
+</div>
 
 <!-- Contribution Snake Animation -->
-<!-- Note: Run the snake.yml workflow to generate the animation, then it will appear below -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" />
@@ -270,152 +712,414 @@ fun_fact: I code by day, dream of cosmos by night 🚀
   </picture>
 </p>
 
-<!-- Trophies Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="35%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="65%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider7)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" width="30">
-  Trophy Cabinet
-  <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" width="30">
-</h2>
+<!-- Trophy Cabinet Title -->
+<div align="center">
+<svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="trophyGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="trophyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C4FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#trophyGrad)" filter="url(#trophyGlow)">
+    🏆 Trophy Cabinet 🏆
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+</svg>
+</div>
 
+<!-- 3D Trophy Display -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=halloffame12&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" alt="GitHub Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=halloffame12&theme=tokyonight&no-frame=true&no-bg=false&column=7&margin-w=10&margin-h=10&bg_color=0a0e27&title_color=00C4FF&text_color=ffffff&icon_color=B967FF&border_color=B967FF" alt="GitHub Trophies"/>
 </p>
 
-<!-- Random Dev Quote -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider8)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
 
-<h2 align="center">
-  💭 Random Dev Quote
-</h2>
+<!-- Dev Quote Title -->
+<div align="center">
+<svg width="400" height="70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="quoteGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="28" font-weight="bold" 
+        fill="#B967FF" filter="url(#quoteGlow)">
+    💭 Random Dev Quote 💭
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </text>
+</svg>
+</div>
 
+<!-- 3D Quote Card with Fade Animation -->
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&bg_color=0a0e27&border_color=B967FF&quote_color=00C4FF&author_color=00FFF0" alt="Random Dev Quote"/>
 </p>
 
-<!-- Current Project Spotlight -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider9)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
 
-<h2 align="center">
-  🔥 Current Projects & Focus
-</h2>
+<!-- Current Projects Title -->
+<div align="center">
+<svg width="550" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="projectGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="projectGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="32" font-weight="bold" 
+        fill="url(#projectGrad)" filter="url(#projectGlow)">
+    🔥 Current Projects & Focus 🔥
+  </text>
+</svg>
+</div>
 
+<!-- 3D Project Cards -->
 <div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
         <a href="https://github.com/halloffame12/ForgeStack-OS">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=halloffame12&repo=ForgeStack-OS&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00C4FF&icon_color=FF6B6B" alt="ForgeStack OS"/>
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=halloffame12&repo=ForgeStack-OS&theme=tokyonight&hide_border=true&bg_color=0a0e27&title_color=00C4FF&icon_color=B967FF&text_color=ffffff&border_radius=10" alt="ForgeStack OS"/>
         </a>
         <br/>
-        <sub><b>🚀 Open-source full-stack SaaS generator</b></sub>
+        <sub><b>🚀 ForgeStack OS - Full-stack SaaS Generator</b></sub>
+        <br/>
+        <sub><i>Open-source platform for rapid application development</i></sub>
       </td>
       <td align="center" width="50%">
         <a href="https://github.com/halloffame12">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=halloffame12&repo=halloffame12&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00C4FF&icon_color=FF6B6B" alt="Profile README"/>
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=halloffame12&repo=halloffame12&theme=tokyonight&hide_border=true&bg_color=0a0e27&title_color=00C4FF&icon_color=B967FF&text_color=ffffff&border_radius=10" alt="Profile README"/>
         </a>
         <br/>
-        <sub><b>🎨 This awesome profile README</b></sub>
+        <sub><b>🎨 3D Animated Profile README</b></sub>
+        <br/>
+        <sub><i>This stunning profile with SVG animations & depth effects</i></sub>
       </td>
     </tr>
   </table>
 </div>
 
-<!-- Currently Learning Section -->
-<h3 align="center">📚 Currently Learning & Exploring</h3>
+<!-- Currently Learning/Exploring -->
+<div align="center">
+<br/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🔬-Advanced_NLP_&_LLMs-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/📱-Flutter_3.0_Features-02569B?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/☁️-Cloud_Architecture-FF9900?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🤖-Generative_AI-4285F4?style=for-the-badge"/>
-</p>
+<svg width="90%" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="learningBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="10" fill="url(#learningBg)" stroke="#B967FF" stroke-width="2"/>
+  <text x="50%" y="30%" text-anchor="middle" font-family="'Fira Code', monospace" font-size="18" font-weight="bold" fill="#00FFF0">
+    📚 Currently Learning & Exploring
+  </text>
+  <text x="50%" y="55%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#ffffff">
+    🔬 Advanced NLP & LLMs  •  📱 Flutter 3.0 Features  •  ☁️ Cloud Architecture  •  🤖 Generative AI
+  </text>
+</svg>
 
-<!-- Support Section -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</div>
 
-<h2 align="center">
-  ☕ Support My Work
-</h2>
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="25%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider10)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
 
+<!-- Support Section Title -->
+<div align="center">
+<svg width="450" height="70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="supportGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="28" font-weight="bold" 
+        fill="#FFD700" filter="url(#supportGlow)">
+    ☕ Support My Work ☕
+  </text>
+</svg>
+</div>
+
+<!-- 3D Support Buttons -->
 <p align="center">
   <a href="https://buymeacoffee.com/sumit_chauhan">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/>
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=0a0e27" alt="Buy Me A Coffee"/>
   </a>
   <a href="https://github.com/sponsors/halloffame12">
-    <img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor"/>
+    <img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white&labelColor=0a0e27" alt="Sponsor"/>
   </a>
 </p>
 
-<!-- Contribution Guidelines -->
-<h3 align="center">🤝 Open to Collaboration!</h3>
-
 <p align="center">
-  <i>I'm always looking for exciting projects and opportunities to collaborate.<br/>
-  Feel free to reach out if you have an interesting idea or project!</i>
+  <i>🤝 I'm always looking for exciting projects and opportunities to collaborate!</i>
+  <br/>
+  <i>Feel free to reach out if you have an interesting idea or project!</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/💡-Open_Source_Projects-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🚀-Startup_Ideas-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/📱-Mobile_App_Development-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🤖-AI%2FML_Projects-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/💡-Open_Source_Projects-00FFF0?style=for-the-badge&labelColor=0a0e27"/>
+  <img src="https://img.shields.io/badge/🚀-Startup_Ideas-FF00FF?style=for-the-badge&labelColor=0a0e27"/>
+  <img src="https://img.shields.io/badge/📱-Mobile_App_Dev-00C4FF?style=for-the-badge&labelColor=0a0e27"/>
+  <img src="https://img.shields.io/badge/🤖-AI/ML_Projects-B967FF?style=for-the-badge&labelColor=0a0e27"/>
 </p>
 
-<!-- Animated Footer -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling"/>
-</p>
+<!-- 3D Animated Divider -->
+<div align="center">
+<svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divider11" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#B967FF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="25" x2="100%" y2="25" stroke="url(#divider11)" stroke-width="2">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
+</div>
+
+<!-- Visitor Counter & Star CTA -->
+<div align="center">
+
+<!-- 3D CTA Card -->
+<svg width="80%" height="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="ctaGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" rx="15" fill="url(#ctaBg)" stroke="url(#divider11)" stroke-width="2" filter="url(#ctaGlow)"/>
+  
+  <text x="50%" y="35%" text-anchor="middle" font-family="'Fira Code', monospace" font-size="24" font-weight="bold" fill="#00C4FF">
+    ⭐ If you like my projects, give them a star! ⭐
+  </text>
+  
+  <text x="50%" y="60%" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#B967FF">
+    Your support means the world to me! 🌌
+  </text>
+</svg>
+
+<br/>
 
 <!-- Visitor Counter -->
-<p align="center">
-  <img src="https://profile-counter.glitch.me/halloffame12/count.svg" alt="Visitor Count"/>
-</p>
+<img src="https://profile-counter.glitch.me/halloffame12/count.svg" alt="Visitor Count"/>
 
-<!-- Made with Love -->
-<p align="center">
-  <img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
-  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg"/>
-  <img src="https://forthebadge.com/images/badges/makes-people-smile.svg"/>
-</p>
+</div>
 
-<p align="center">
-  <b>⭐ If you like my projects, give them a star! ⭐</b>
-</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="70" alt="Thanks for visiting!"/>
-</p>
-
-<!-- Easter Egg -->
+<!-- Hidden Easter Egg Section -->
 <details>
-<summary>🎮 Click for a Secret</summary>
+<summary>
+  
+<!-- Easter Egg Title SVG -->
+<div align="center">
+<svg width="300" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="easterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1">
+        <animate attributeName="stop-color" values="#FF00FF;#00C4FF;#00FFF0;#FF00FF" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#00C4FF;stop-opacity:1">
+        <animate attributeName="stop-color" values="#00C4FF;#00FFF0;#FF00FF;#00C4FF" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="easterGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="'Fira Code', monospace" font-size="22" font-weight="bold" 
+        fill="url(#easterGrad)" filter="url(#easterGlow)">
+    🎮 Click for a Secret! 🎮
+  </text>
+</svg>
+</div>
+
+</summary>
 <br>
 
-```
-   ╔══════════════════════════════════════════════════════════════════╗
-   ║                                                                  ║
-   ║   🚀 Welcome to the secret zone! 🚀                              ║
-   ║                                                                  ║
-   ║   Thanks for scrolling all the way down here!                    ║
-   ║   You're clearly someone who pays attention to details.         ║
-   ║                                                                  ║
-   ║   Here's a coding joke for you:                                  ║
-   ║   Why do programmers prefer dark mode?                           ║
-   ║   Because light attracts bugs! 🐛                                ║
-   ║                                                                  ║
-   ╚══════════════════════════════════════════════════════════════════╝
-```
-
-<p align="center">
-  <i>"The only way to do great work is to love what you do." - Steve Jobs</i>
-</p>
-
-<p align="center">
-  <i>"Talk is cheap. Show me the code." - Linus Torvalds</i>
-</p>
+<!-- 3D Secret Box -->
+<div align="center">
+<svg width="90%" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Secret Box Gradient -->
+    <linearGradient id="secretBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f1729;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1f3a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Animated Border -->
+    <linearGradient id="secretBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:1">
+        <animate attributeName="stop-color" values="#00C4FF;#B967FF;#00FFF0;#FF00FF;#00C4FF" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#B967FF;stop-opacity:1">
+        <animate attributeName="stop-color" values="#B967FF;#00FFF0;#FF00FF;#00C4FF;#B967FF" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <filter id="secretGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Box Background -->
+  <rect width="100%" height="100%" rx="15" fill="url(#secretBg)" stroke="url(#secretBorder)" stroke-width="3" filter="url(#secretGlow)"/>
+  
+  <!-- Title -->
+  <text x="50%" y="8%" text-anchor="middle" font-family="'Fira Code', monospace" font-size="28" font-weight="bold" fill="#00FFF0">
+    🚀 Welcome to the Secret Zone! 🚀
+  </text>
+  
+  <!-- Message Lines -->
+  <text x="50%" y="18%" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#ffffff">
+    Thanks for scrolling all the way down here!
+  </text>
+  <text x="50%" y="24%" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#ffffff">
+    You're clearly someone who pays attention to details.
+  </text>
+  
+  <!-- Joke Section -->
+  <text x="50%" y="35%" text-anchor="middle" font-family="'Courier New', monospace" font-size="18" font-weight="bold" fill="#B967FF">
+    Here's a coding joke for you:
+  </text>
+  
+  <text x="50%" y="45%" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#00C4FF">
+    Why do programmers prefer dark mode?
+  </text>
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#00FFF0">
+    Because light attracts bugs! 🐛
+  </text>
+  
+  <!-- Quotes -->
+  <line x1="15%" y1="60%" x2="85%" y2="60%" stroke="#B967FF" stroke-width="1" opacity="0.5"/>
+  
+  <text x="50%" y="68%" text-anchor="middle" font-family="'Georgia', serif" font-size="15" font-style="italic" fill="#FFD700">
+    "The only way to do great work is to love what you do."
+  </text>
+  <text x="50%" y="74%" text-anchor="middle" font-family="'Georgia', serif" font-size="13" fill="#B967FF">
+    - Steve Jobs
+  </text>
+  
+  <line x1="15%" y1="80%" x2="85%" y2="80%" stroke="#B967FF" stroke-width="1" opacity="0.5"/>
+  
+  <text x="50%" y="88%" text-anchor="middle" font-family="'Georgia', serif" font-size="15" font-style="italic" fill="#FFD700">
+    "Talk is cheap. Show me the code."
+  </text>
+  <text x="50%" y="94%" text-anchor="middle" font-family="'Georgia', serif" font-size="13" fill="#B967FF">
+    - Linus Torvalds
+  </text>
+</svg>
+</div>
 
 <p align="center">
   <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="100"/>
@@ -423,5 +1127,80 @@ fun_fact: I code by day, dream of cosmos by night 🚀
 
 </details>
 
-<!-- Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling&desc=Made%20with%20%E2%9D%A4%20by%20Sumit%20Chauhan&descSize=15&descAlignY=80"/>
+<!-- 3D Footer Wave with Depth -->
+<div align="center">
+<br/>
+
+<!-- Made with Love Badges -->
+<p align="center">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
+  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg"/>
+  <img src="https://forthebadge.com/images/badges/makes-people-smile.svg"/>
+</p>
+
+<!-- Final Footer SVG with Wave Animation -->
+<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+  <defs>
+    <!-- Wave Gradients -->
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B967FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C4FF;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wave3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0a0e27"/>
+  
+  <!-- Animated Wave 1 (Back Layer) -->
+  <path fill="url(#wave1Grad)" opacity="0.7">
+    <animate attributeName="d" 
+             dur="8s" 
+             repeatCount="indefinite"
+             values="M0,100 C150,120 350,80 500,100 C650,120 850,80 1000,100 L1000,200 L0,200 Z;
+                     M0,100 C150,80 350,120 500,100 C650,80 850,120 1000,100 L1000,200 L0,200 Z;
+                     M0,100 C150,120 350,80 500,100 C650,120 850,80 1000,100 L1000,200 L0,200 Z"/>
+  </path>
+  
+  <!-- Animated Wave 2 (Middle Layer) -->
+  <path fill="url(#wave2Grad)" opacity="0.5">
+    <animate attributeName="d" 
+             dur="6s" 
+             repeatCount="indefinite"
+             values="M0,120 C150,100 350,140 500,120 C650,100 850,140 1000,120 L1000,200 L0,200 Z;
+                     M0,120 C150,140 350,100 500,120 C650,140 850,100 1000,120 L1000,200 L0,200 Z;
+                     M0,120 C150,100 350,140 500,120 C650,100 850,140 1000,120 L1000,200 L0,200 Z"/>
+  </path>
+  
+  <!-- Animated Wave 3 (Front Layer) -->
+  <path fill="url(#wave3Grad)" opacity="0.3">
+    <animate attributeName="d" 
+             dur="10s" 
+             repeatCount="indefinite"
+             values="M0,140 C150,160 350,120 500,140 C650,160 850,120 1000,140 L1000,200 L0,200 Z;
+                     M0,140 C150,120 350,160 500,140 C650,120 850,160 1000,140 L1000,200 L0,200 Z;
+                     M0,140 C150,160 350,120 500,140 C650,160 850,120 1000,140 L1000,200 L0,200 Z"/>
+  </path>
+  
+  <!-- Footer Text -->
+  <text x="50%" y="90%" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#B967FF" opacity="0.9">
+    Made with ❤️ by Sumit Chauhan • Thanks for visiting! 🌌
+  </text>
+</svg>
+
+</div>
+
+---
+
+<p align="center">
+  <sub>
+    <i>Emphasizing fake 3D depth using layered SVGs, perspective skew, light/shadow gradients,<br/>and slow parallax motion to simulate a 3D scene without WebGL</i>
+  </sub>
+</p>
