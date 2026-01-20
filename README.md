@@ -170,55 +170,22 @@
     </circle>
   </g>
   
-  <!-- Gradient for 3D Text with Depth and Lighting -->
-  <defs>
-    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
-      <stop offset="15%" style="stop-color:#00FFF0;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
-      <stop offset="85%" style="stop-color:#7B5FFF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4B3088;stop-opacity:0.8" />
-    </linearGradient>
-    
-    <!-- Specular highlight for glossy 3D effect -->
-    <radialGradient id="highlight1" cx="40%" cy="30%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
-      <stop offset="50%" style="stop-color:#00FFF0;stop-opacity:0.2" />
-      <stop offset="100%" style="stop-color:#00C4FF;stop-opacity:0" />
-    </radialGradient>
-  </defs>
-  
-  <!-- Enhanced 3D Title with Multi-Layer Depth (Layer 2) -->
-  <!-- Deep shadow layer -->
-  <text x="50%" y="45%" text-anchor="middle" 
+  <!-- 3D Title with Enhanced Depth (Layer 2) -->
+  <text x="50%" y="45%" text-anchor="middle" filter="url(#shadow3d)" 
         font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="#000000" opacity="0.15" filter="url(#glow)">
-    <tspan dx="10" dy="10">Welcome to My Universe</tspan>
-    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
-  </text>
-  
-  <!-- Mid shadow layer -->
-  <text x="50%" y="45%" text-anchor="middle" 
-        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="#000000" opacity="0.25">
-    <tspan dx="6" dy="6">Welcome to My Universe</tspan>
-  </text>
-  
-  <!-- Main text with gradient -->
-  <text x="50%" y="45%" text-anchor="middle" 
-        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="url(#gradient1)" class="pulseGlow">
+        fill="url(#gradient1)">
     Welcome to My Universe
     <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
   </text>
   
-  <!-- Specular highlight overlay for glossy effect -->
-  <text x="50%" y="45%" text-anchor="middle" 
-        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="url(#highlight1)" opacity="0.5">
-    Welcome to My Universe
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
-  </text>
+  <!-- Gradient for 3D Text -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFF0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00C4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC88FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
   
   <!-- Subtitle with glow (Layer 3) -->
   <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
@@ -228,7 +195,11 @@
     <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/>
   </text>
   
-  <!-- Enhanced Floating Planet/Sphere with 3D Depth -->
+  <!-- Floating Planet/Circle Decoration with Enhanced Depth -->
+  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
   <defs>
     <radialGradient id="planetGradient" cx="35%" cy="35%">
       <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4" />
@@ -237,37 +208,7 @@
       <stop offset="85%" style="stop-color:#7B2FFF;stop-opacity:0.8" />
       <stop offset="100%" style="stop-color:#4A1888;stop-opacity:0.5" />
     </radialGradient>
-    
-    <!-- Shadow for the planet -->
-    <radialGradient id="planetShadow" cx="50%" cy="50%">
-      <stop offset="0%" style="stop-color:#000000;stop-opacity:0" />
-      <stop offset="70%" style="stop-color:#000000;stop-opacity:0" />
-      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.6" />
-    </radialGradient>
   </defs>
-  
-  <!-- Planet shadow (cast on background) -->
-  <ellipse cx="87%" cy="23%" rx="18" ry="6" fill="#000000" opacity="0.2" filter="url(#glow)">
-    <animate attributeName="cy" values="23%;28%;23%" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.15;0.2" dur="4s" repeatCount="indefinite"/>
-  </ellipse>
-  
-  <!-- Main planet body with depth -->
-  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#perspectiveDepth)" opacity="0.8" class="pulseGlow">
-    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Specular highlight on planet -->
-  <circle cx="82%" cy="17%" r="6" fill="url(#highlight1)" opacity="0.7">
-    <animate attributeName="cy" values="17%;22%;17%" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Atmospheric glow around planet -->
-  <circle cx="85%" cy="20%" r="17" fill="none" stroke="#B967FF" stroke-width="0.5" opacity="0.3" filter="url(#glow)">
-    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
-  </circle>
 </svg>
 
 </div>
