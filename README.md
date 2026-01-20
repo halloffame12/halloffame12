@@ -424,4 +424,4 @@ fun_fact: I code by day, dream of cosmos by night 🚀
 </details>
 
 <!-- Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling&desc=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20Sumit%20Chauhan&descSize=15&descAlignY=80"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling&desc=Made%20with%20%E2%9D%A4%20by%20Sumit%20Chauhan&descSize=15&descAlignY=80"/>
