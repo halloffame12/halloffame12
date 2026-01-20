@@ -170,14 +170,6 @@
     </circle>
   </g>
   
-  <!-- 3D Title with Enhanced Depth (Layer 2) -->
-  <text x="50%" y="45%" text-anchor="middle" filter="url(#shadow3d)" 
-        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
-        fill="url(#gradient1)">
-    Welcome to My Universe
-    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
-  </text>
-  
   <!-- Gradient for 3D Text -->
   <defs>
     <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -187,6 +179,14 @@
     </linearGradient>
   </defs>
   
+  <!-- 3D Title with Enhanced Depth (Layer 2) -->
+  <text x="50%" y="45%" text-anchor="middle" filter="url(#shadow3d)" 
+        font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" 
+        fill="url(#gradient1)">
+    Welcome to My Universe
+    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+  </text>
+  
   <!-- Subtitle with glow (Layer 3) -->
   <text x="50%" y="60%" text-anchor="middle" filter="url(#glow)"
         font-family="'Segoe UI', Arial, sans-serif" font-size="20" 
@@ -195,11 +195,7 @@
     <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze"/>
   </text>
   
-  <!-- Floating Planet/Circle Decoration with Enhanced Depth -->
-  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#glow)" opacity="0.6">
-    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  
+  <!-- Planet Gradient Definition -->
   <defs>
     <radialGradient id="planetGradient" cx="35%" cy="35%">
       <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4" />
@@ -209,6 +205,11 @@
       <stop offset="100%" style="stop-color:#4A1888;stop-opacity:0.5" />
     </radialGradient>
   </defs>
+  
+  <!-- Floating Planet/Circle Decoration with Enhanced Depth -->
+  <circle cx="85%" cy="20%" r="15" fill="url(#planetGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite"/>
+  </circle>
 </svg>
 
 </div>
