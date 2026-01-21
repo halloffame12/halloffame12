@@ -253,19 +253,14 @@ Life_Philosophy: "Code • Create • Conquer"
 <!-- Coding Activity -->
 <div align="center">
 
-## 📊 Weekly Coding Stats
+## 📊 Coding Activity
 
-<!--START_SECTION:waka-->
-```text
-💻 Most Used Languages This Week
+<!-- WakaTime Integration - Set up https://wakatime.com for automatic updates -->
+<a href="https://wakatime.com/@halloffame12">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=halloffame12&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&text_color=c9d1d9&langs_count=6&layout=compact" alt="WakaTime Stats"/>
+</a>
 
-TypeScript   ████████████░░░░░░░░░   58.2%
-Python       █████░░░░░░░░░░░░░░░░   24.1%
-Dart         ███░░░░░░░░░░░░░░░░░░   12.4%
-JavaScript   █░░░░░░░░░░░░░░░░░░░░    3.8%
-Other        ░░░░░░░░░░░░░░░░░░░░░    1.5%
-```
-<!--END_SECTION:waka-->
+<sub><i>📝 To enable real-time stats, connect <a href="https://wakatime.com">WakaTime</a> to your account!</i></sub>
 
 </div>
 
@@ -302,7 +297,7 @@ Other        ░░░░░░░░░░░░░░░░░░░░░    
 ║   • Coffee-to-code conversion rate: 100% ☕              ║
 ║   • Favorite error: "It works on my machine" 🤷          ║
 ║   • Dream: Write code that doesn't need comments 📝      ║
-║   • Reality: Comments everywhere... and still confused! 😅║
+║   • Reality: Comments everywhere... still confused! 😅    ║
 ║                                                           ║
 ║   "First, solve the problem. Then, write the code."      ║
 ║                           - John Johnson                  ║
