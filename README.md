@@ -134,10 +134,6 @@
   <img src="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=halloffame12&theme=tokyonight&no-frame=true&margin-w=4&row=1&column=7" alt="GitHub Trophies" />
-</p>
-
 <h3 align="center">🐍 Contribution Telemetry</h3>
 
 <p align="center">
