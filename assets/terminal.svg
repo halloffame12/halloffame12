@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="348" viewBox="0 0 720 348" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+  <rect x="0" y="0" width="720" height="40" rx="16" fill="#161b22"/>
+  <rect x="0" y="20" width="720" height="20" fill="#161b22"/>
+  <circle cx="28" cy="20" r="6.5" fill="#ff5f57"/>
+  <circle cx="52" cy="20" r="6.5" fill="#febc2e"/>
+  <circle cx="76" cy="20" r="6.5" fill="#28c840"/>
+  <text x="360" y="26" text-anchor="middle" font-size="13" fill="#8b949e">sumit@dev: ~/profile</text>
+  <rect x="0.75" y="0.75" width="718.5" height="346.5" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
+
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.6s" fill="freeze"/>
+    <text x="32" y="68" font-size="15" fill="#58a6ff">$ whoami</text>
+    <text x="176" y="68" font-size="15" fill="#e6edf3">Sumit Chauhan - Software Engineer</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.2s" fill="freeze"/>
+    <text x="32" y="98" font-size="15" fill="#58a6ff">$ specialty</text>
+    <text x="176" y="98" font-size="15" fill="#e6edf3">AI-Driven Automation &amp; Developer Tooling</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.8s" fill="freeze"/>
+    <text x="32" y="128" font-size="15" fill="#58a6ff">$ education</text>
+    <text x="176" y="128" font-size="15" fill="#e6edf3">IIT Patna - B.S. CS &amp; Data Science - CGPA 8.4</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.4s" fill="freeze"/>
+    <text x="32" y="158" font-size="15" fill="#58a6ff">$ internship</text>
+    <text x="176" y="158" font-size="15" fill="#e6edf3">Rozana - MIS / Automation Intern (Python)</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.0s" fill="freeze"/>
+    <text x="32" y="188" font-size="15" fill="#58a6ff">$ founder</text>
+    <text x="176" y="188" font-size="15" fill="#e6edf3">Versz - social debate platform - versz.app</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.6s" fill="freeze"/>
+    <text x="32" y="218" font-size="15" fill="#58a6ff">$ award</text>
+    <text x="176" y="218" font-size="15" fill="#e6edf3">NASA Space Apps 2025 - 4th place (DTC regional)</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.2s" fill="freeze"/>
+    <text x="32" y="248" font-size="15" fill="#58a6ff">$ research</text>
+    <text x="176" y="248" font-size="15" fill="#e6edf3">BrowserOS - OS architecture on the web (OSF Preprints)</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.8s" fill="freeze"/>
+    <text x="32" y="278" font-size="15" fill="#58a6ff">$ status</text>
+    <text x="176" y="278" font-size="15" fill="#3fb950">Open to SDE Intern roles</text>
+    <rect x="372" y="268" width="9" height="16" fill="#00FF99">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
