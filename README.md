@@ -19,6 +19,12 @@
   <img src="https://img.shields.io/badge/Open_to-SDE_Intern_Roles-3FB950?style=for-the-badge" />
 </p>
 
+
+<p align="center">
+  <a href="https://glama.ai/mcp/servers/halloffame12/CTX">
+    <img src="https://glama.ai/mcp/servers/halloffame12/CTX/badges/score.svg" alt="Glama MCP Quality Score for CTX" />
+  </a>
+</p>
 ---
 
 <h2 align="center">About Me</h2>
