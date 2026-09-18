@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/terminal.svg" alt="Sumit Chauhan - interactive terminal card" width="720" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/terminal.svg" alt="Sumit Chauhan - Open Source Engineer" width="720" />
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00875A&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." alt="Typing animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00875A&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." alt="Typing animation" />
   </picture>
 </p>
 
@@ -21,8 +21,12 @@
   <img src="https://img.shields.io/badge/IIT_Patna-CS_%26_Data_Science-FF7A00?style=for-the-badge&logo=google-scholar&logoColor=white" />
   <img src="https://img.shields.io/badge/NASA_Space_Apps_2025-Top_4_DTC-0B3D91?style=for-the-badge&logo=nasa&logoColor=white" />
   <img src="https://img.shields.io/badge/Open_to-SDE_Intern_Roles-3FB950?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OSS-Maintainer_%26_Contributor-6e40c9?style=for-the-badge&logo=opensourceinitiative&logoColor=white" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/dashboard.svg" alt="GitHub activity dashboard" width="720" />
+</p>
 
 <p align="center">
   <a href="https://glama.ai/mcp/servers/halloffame12/CTX">
@@ -31,10 +35,10 @@
 </p>
 ---
 
-<h2 align="center">About Me</h2>
+<h2 align="center">🧑‍💻 About Me</h2>
 
 <p align="center">
-  Software Engineer specializing in <strong>AI-Driven Automation & Developer Tooling</strong>. I build MCP servers, real-time systems, and cross-platform applications with an emphasis on type safety, performance, and clean architecture.
+  Software Engineer specializing in <strong>AI-Driven Automation & Developer Tooling</strong>. I build MCP servers, real-time systems, and cross-platform applications with an emphasis on type safety, performance, and clean architecture — and I ship them <strong>open source</strong>.
 </p>
 
 <p align="center">
@@ -45,12 +49,52 @@
   🎓 <strong>IIT Patna</strong> — B.S. Computer Science & Data Science (2026–2030) · CGPA 8.4<br />
   🚀 <strong>NASA Space Apps Challenge 2025</strong> — 4th place, DTC regional<br />
   📄 <strong>OSF Preprints</strong> — research paper on BrowserOS architecture<br />
+  🕊️ <strong>Open Source</strong> — maintainer + contributor to MCP, packaging, and AI tooling<br />
   📍 Delhi, India
 </p>
 
 ---
 
-<h2 align="center">Current Focus</h2>
+<h2 align="center">🌱 Open Source</h2>
+
+<div align="center">
+  <table width="92%">
+    <tr>
+      <td align="center" width="60%">
+        <h3>🛠️ Maintainer — <a href="https://github.com/halloffame12/CTX">ctx</a> · MCP Code-Intelligence Server</h3>
+        <p>Parses codebases with <strong>tree-sitter</strong> and exposes a semantic SQLite index through <strong>11 MCP tools</strong> — native code navigation for AI assistants.</p>
+        <p>
+          <code>npm i -g ctxai-cli</code> ·
+          <code>cargo install ctxai-cli</code> ·
+          <code>brew install ctx</code> ·
+          <code>scoop install ctx</code> ·
+          <code>winget install ctx</code>
+        </p>
+        <p>
+          <a href="https://github.com/halloffame12/CTX"><code>Repository</code></a> ·
+          <a href="https://halloffame12.github.io/CTX"><code>Docs</code></a> ·
+          <a href="https://github.com/halloffame12/homebrew-ctx"><code>Homebrew tap</code></a> ·
+          <a href="https://github.com/halloffame12/scoop-ctx"><code>Scoop bucket</code></a>
+        </p>
+      </td>
+      <td align="center" width="40%">
+        <h3>🙌 Contributions to Upstream</h3>
+        <p><strong>Microsoft / winget-pkgs</strong> — packaging manifests</p>
+        <p><strong>awesome-mcp-servers</strong> — MCP ecosystem curation</p>
+        <p><strong>MCP ecosystem</strong> — spec-aligned server tooling</p>
+        <p>⭐ Open to maintainers, RFCs, and good-first-issues</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p align="center">
+  <em>OSS philosophy: build in public, ship everywhere, document obsessively.</em>
+</p>
+
+---
+
+<h2 align="center">🎯 Current Focus</h2>
 
 <div align="center">
   <pre style="display: inline-block; text-align: left;">
@@ -63,7 +107,7 @@
 
 ---
 
-<h2 align="center">Featured Projects</h2>
+<h2 align="center">✨ Featured Projects</h2>
 
 <div align="center">
   <table width="90%">
@@ -113,7 +157,7 @@
 
 ---
 
-<h2 align="center">Technical Ecosystem</h2>
+<h2 align="center">🧰 Technical Ecosystem</h2>
 
 <div align="center">
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
@@ -133,18 +177,36 @@
 
 ---
 
-<h2 align="center">GitHub Metrics</h2>
+<h2 align="center">📊 GitHub Metrics</h2>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=github&hide_border=true" />
-    <img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github_dark&animation=load" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github&animation=load" />
+    <img alt="GitHub profile summary" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github&animation=load" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github_dark&animation=load" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github&animation=load" />
+    <img width="400" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github&animation=load" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=github&hide_border=true" />
-    <img height="170" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github_dark&animation=load" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github&animation=load" />
+    <img width="400" alt="Languages" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github&animation=load" />
+  </picture>
+</p>
+
+<h3 align="center">📈 Contribution Activity</h3>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-light.svg" />
+    <img alt="Contribution heatmap" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.svg" width="760" />
   </picture>
 </p>
 
@@ -168,7 +230,7 @@
 
 ---
 
-<h2 align="center">Let's Build Something</h2>
+<h2 align="center">🤝 Let's Build Something</h2>
 
 <p align="center">
   💼 <strong>Recruiters & Engineering Managers:</strong> Available for Software Engineering, AI tooling, and Backend Development intern roles.<br />
