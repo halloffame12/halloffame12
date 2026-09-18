@@ -3,7 +3,11 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." alt="Typing animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00875A&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." />
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1500&color=00FF99&center=true&vCenter=true&width=850&lines=Software+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Building+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+at+versz.app.;Rozana+-+MIS+%2F+Automation+Intern+(Python).;NASA+Space+Apps+2025+-+4th+place+(DTC+regional).;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science." alt="Typing animation" />
+  </picture>
 </p>
 
 <p align="center">
@@ -132,12 +136,24 @@
 <h2 align="center">GitHub Metrics</h2>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=tokyonight&hide_border=true" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=github&hide_border=true" />
+    <img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=halloffame12&show_icons=true&theme=tokyonight&hide_border=true" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=github&hide_border=true" />
+    <img height="170" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=halloffame12&layout=compact&theme=tokyonight&hide_border=true" />
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=halloffame12&theme=default&hide_border=true" />
+    <img src="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  </picture>
 </p>
 
 <h3 align="center">🐍 Contribution Telemetry</h3>
