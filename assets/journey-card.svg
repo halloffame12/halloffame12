@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="486" viewBox="0 0 720 486" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+  <rect x="0" y="0" width="720" height="486" rx="16" fill="#0d1117"/>
+  <rect x="0" y="0" width="720" height="40" rx="16" fill="#161b22"/>
+  <rect x="0" y="20" width="720" height="20" fill="#161b22"/>
+  <circle cx="28" cy="20" r="6.5" fill="#ff5f57"/>
+  <circle cx="52" cy="20" r="6.5" fill="#febc2e"/>
+  <circle cx="76" cy="20" r="6.5" fill="#28c840"/>
+  <text x="360" y="26" text-anchor="middle" font-size="13" fill="#8b949e">sumit@journey: git log --oneline</text>
+  <rect x="0.75" y="0.75" width="718.5" height="484.5" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.15s" fill="freeze"/>
+    <text x="40" y="66" font-size="14" fill="#58a6ff">$ git log --oneline --signature</text>
+  </g>
+  <rect x="87" y="92" width="2" height="364" rx="1" fill="#21262d"/>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.50s" fill="freeze"/>
+    <circle cx="88" cy="102" r="5" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="0.50s" fill="freeze"/></circle>
+    <text x="108" y="108" font-size="13" font-weight="bold" fill="#58a6ff">2021 — GitHub</text>
+    <text x="108" y="125" font-size="12" fill="#8b949e">began the open-source journey</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.85s" fill="freeze"/>
+    <circle cx="88" cy="156" r="5" fill="#0d1117" stroke="#a371f7" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="0.85s" fill="freeze"/></circle>
+    <text x="108" y="162" font-size="13" font-weight="bold" fill="#a371f7">2024 — Snake AI</text>
+    <text x="108" y="179" font-size="12" fill="#8b949e">Deep Q-Learning milestone · TensorFlow</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.20s" fill="freeze"/>
+    <circle cx="88" cy="210" r="5" fill="#0d1117" stroke="#f0883e" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="1.20s" fill="freeze"/></circle>
+    <text x="108" y="216" font-size="13" font-weight="bold" fill="#f0883e">2025 — NASA Space Apps</text>
+    <text x="108" y="233" font-size="12" fill="#8b949e">Top 4 · DTC regional</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.55s" fill="freeze"/>
+    <circle cx="88" cy="264" r="5" fill="#0d1117" stroke="#a371f7" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="1.55s" fill="freeze"/></circle>
+    <text x="108" y="270" font-size="13" font-weight="bold" fill="#a371f7">2026 — IIT Patna</text>
+    <text x="108" y="287" font-size="12" fill="#8b949e">B.S. Computer Science & Data Science · CGPA 8.4</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.90s" fill="freeze"/>
+    <circle cx="88" cy="318" r="5" fill="#0d1117" stroke="#39d353" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="1.90s" fill="freeze"/></circle>
+    <text x="108" y="324" font-size="13" font-weight="bold" fill="#39d353">2026 — Rozana</text>
+    <text x="108" y="341" font-size="12" fill="#8b949e">MIS / Automation Intern · Python</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.25s" fill="freeze"/>
+    <circle cx="88" cy="372" r="5" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="2.25s" fill="freeze"/></circle>
+    <text x="108" y="378" font-size="13" font-weight="bold" fill="#58a6ff">2026 — Versz</text>
+    <text x="108" y="395" font-size="12" fill="#8b949e">founder · live at versz.app</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.60s" fill="freeze"/>
+    <circle cx="88" cy="426" r="5" fill="#0d1117" stroke="#39d353" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="2.60s" fill="freeze"/></circle>
+    <text x="108" y="432" font-size="13" font-weight="bold" fill="#39d353">2026 — ctx</text>
+    <text x="108" y="449" font-size="12" fill="#8b949e">released via npm · cargo · brew · scoop · winget</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.2s" fill="freeze"/>
+    <text x="40" y="466" font-size="11" fill="#484f58">// && git commit -m "build in public · ship everywhere"</text>
+  </g>
+</svg>
