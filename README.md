@@ -35,23 +35,34 @@
 </p>
 ---
 
-<h2 align="center">🧑‍💻 About Me</h2>
+<h2 align="center">👨‍💻 About Me</h2>
 
 <p align="center">
-  Software Engineer specializing in <strong>AI-Driven Automation & Developer Tooling</strong>. I build MCP servers, real-time systems, and cross-platform applications with an emphasis on type safety, performance, and clean architecture — and I ship them <strong>open source</strong>.
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/about-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/about-light.svg" />
+    <img alt="Sumit Chauhan — professional profile card" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/about-dark.svg" width="720" />
+  </picture>
 </p>
 
 <p align="center">
-  Currently interning at <strong>Rozana</strong> as an <strong>MIS/Automation Intern</strong> (Python) and founding <strong>Versz</strong>, a live social debate platform. My flagship project, <strong>ctx</strong>, is an open-source MCP code-intelligence server that ships to developers via <code>npm</code>, <code>cargo</code>, Homebrew, Scoop, and winget.
+  <strong>Open Source Engineer</strong> specializing in <strong>AI-Driven Automation & Developer Tooling</strong>. I build MCP servers, real-time systems, and cross-platform applications — with type safety, performance, and clean architecture as non-negotiables. Right now I'm interning at <strong>Rozana</strong>, founding <strong>Versz</strong>, and maintaining <strong>ctx</strong>, an MCP code-intelligence server that ships via <code>npm</code>, <code>cargo</code>, Homebrew, Scoop, and winget.
 </p>
 
 <p align="center">
-  🎓 <strong>IIT Patna</strong> — B.S. Computer Science & Data Science (2026–2030) · CGPA 8.4<br />
-  🚀 <strong>NASA Space Apps Challenge 2025</strong> — 4th place, DTC regional<br />
-  📄 <strong>OSF Preprints</strong> — research paper on BrowserOS architecture<br />
-  🕊️ <strong>Open Source</strong> — maintainer + contributor to MCP, packaging, and AI tooling<br />
-  📍 Delhi, India
+  <code>{ open-source }</code> <code>{ mcp-tooling }</code> <code>{ ai-automation }</code> <code>{ real-time-systems }</code> <code>{ typesafe-stack }</code> <code>{ developer-experience }</code>
 </p>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">🎓 <strong>IIT Patna</strong><br/>B.S. CS &amp; Data Science · CGPA 8.4</td>
+      <td align="center">🚀 <strong>NASA Space Apps 2025</strong><br/>Top 4 · DTC regional</td>
+      <td align="center">📄 <strong>OSF Preprints</strong><br/>BrowserOS research</td>
+      <td align="center">📍 <strong>Delhi, India</strong><br/>Open to remote &amp; relocation</td>
+    </tr>
+  </table>
+</div>
 
 ---
 
