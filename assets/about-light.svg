@@ -27,7 +27,7 @@
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.85s" fill="freeze"/>
     <text x="48" y="186" font-size="13" fill="#57606a">focus</text>
     <text x="168" y="186" font-size="13" fill="#0969da">·</text>
-    <text x="180" y="186" font-size="13" font-weight="bold" fill="#24292f">AI-Driven Automation & Developer Tooling</text>
+    <text x="180" y="186" font-size="13" font-weight="bold" fill="#24292f">AI-Driven Automation &amp; Developer Tooling</text>
   </g>
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1s" fill="freeze"/>
     <text x="48" y="216" font-size="13" fill="#57606a">location</text>
@@ -36,12 +36,12 @@
   </g>
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.2s" fill="freeze"/>
     <rect x="32" y="250" width="3" height="14" rx="1.5" fill="#8250df"><animate attributeName="width" from="0" to="3" dur="0.25s" begin="1.35s" fill="freeze"/></rect>
-    <text x="44" y="261" font-size="11" fill="#57606a">// education & honors</text>
+    <text x="44" y="261" font-size="11" fill="#57606a">// education &amp; honors</text>
   </g>
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.35s" fill="freeze"/>
     <text x="48" y="290" font-size="13" fill="#57606a">education</text>
     <text x="168" y="290" font-size="13" fill="#8250df">·</text>
-    <text x="180" y="290" font-size="13" font-weight="bold" fill="#24292f">IIT Patna — B.S. Computer Science & Data Science</text>
+    <text x="180" y="290" font-size="13" font-weight="bold" fill="#24292f">IIT Patna — B.S. Computer Science &amp; Data Science</text>
   </g>
   <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.5s" fill="freeze"/>
     <text x="48" y="320" font-size="13" fill="#57606a">cgpa</text>

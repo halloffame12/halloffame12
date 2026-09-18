@@ -11,6 +11,10 @@ const C = {
   blue: '#58a6ff', purple: '#a371f7', green: '#39d353', orange: '#f0883e',
 };
 
+function esc(s) {
+  return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+}
+
 function skillsBuild() {
   const out = [];
   out.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${SKILLS_W}" height="${SKILLS_H}" viewBox="0 0 ${SKILLS_W} ${SKILLS_H}" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">`);
@@ -30,14 +34,14 @@ function skillsBuild() {
   function head(x, y, label, accent, begin) {
     out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.25s" begin="${begin}s" fill="freeze"/>`);
     out.push(`    <rect x="${x}" y="${y - 8}" width="3" height="12" rx="1.5" fill="${accent}"/>`);
-    out.push(`    <text x="${x + 12}" y="${y + 1}" font-size="11" fill="${C.dim}">${label}</text>`);
+    out.push(`    <text x="${x + 12}" y="${y + 1}" font-size="11" fill="${C.dim}">${esc(label)}</text>`);
     out.push(`  </g>`);
   }
 
   function bar(x, y, label, pct, accent, begin) {
     const w = Math.round((pct / 100) * 300);
     out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="${begin}s" fill="freeze"/>`);
-    out.push(`    <text x="${x}" y="${y}" font-size="12.5" fill="${C.value}">${label}</text>`);
+    out.push(`    <text x="${x}" y="${y}" font-size="12.5" fill="${C.value}">${esc(label)}</text>`);
     out.push(`    <text x="${x + 300}" y="${y}" font-size="12.5" text-anchor="end" fill="${accent}">${pct}%</text>`);
     out.push(`    <rect x="${x}" y="${y + 8}" width="300" height="5" rx="2.5" fill="${C.track}"/>`);
     out.push(`    <rect x="${x}" y="${y + 8}" width="0" height="5" rx="2.5" fill="${accent}"><animate attributeName="width" from="0" to="${w}" dur="0.6s" begin="${(begin + 0.25).toFixed(2)}s" fill="freeze"/></rect>`);
@@ -113,13 +117,13 @@ function journeyBuild() {
     const begin = (0.5 + i * 0.35).toFixed(2);
     out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="${begin}s" fill="freeze"/>`);
     out.push(`    <circle cx="${xLine}" cy="${y - 6}" r="5" fill="${C.bg}" stroke="${e.c}" stroke-width="2.5"><animate attributeName="r" values="0;6;5" keyTimes="0;0.7;1" dur="0.5s" begin="${begin}s" fill="freeze"/></circle>`);
-    out.push(`    <text x="${xLine + 20}" y="${y}" font-size="13" font-weight="bold" fill="${e.c}">${e.year} — ${e.title}</text>`);
-    out.push(`    <text x="${xLine + 20}" y="${y + 17}" font-size="12" fill="${C.dim}">${e.desc}</text>`);
+    out.push(`    <text x="${xLine + 20}" y="${y}" font-size="13" font-weight="bold" fill="${e.c}">${e.year} — ${esc(e.title)}</text>`);
+    out.push(`    <text x="${xLine + 20}" y="${y + 17}" font-size="12" fill="${C.dim}">${esc(e.desc)}</text>`);
     out.push(`  </g>`);
   });
 
   out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.2s" fill="freeze"/>`);
-  out.push(`    <text x="40" y="466" font-size="11" fill="${C.muted}">// && git commit -m "build in public · ship everywhere"</text>`);
+  out.push(`    <text x="40" y="466" font-size="11" fill="${C.muted}">${esc('// && git commit -m "build in public · ship everywhere"')}</text>`);
   out.push(`  </g>`);
 
   out.push(`</svg>`);

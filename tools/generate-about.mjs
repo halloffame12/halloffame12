@@ -18,18 +18,22 @@ const P = {
   },
 };
 
+function esc(s) {
+  return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+}
+
 function row(out, c, { y, key, value, begin, accent }) {
   out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="${begin}s" fill="freeze"/>`);
-  out.push(`    <text x="48" y="${y}" font-size="13" fill="${c.key}">${key}</text>`);
+  out.push(`    <text x="48" y="${y}" font-size="13" fill="${c.key}">${esc(key)}</text>`);
   out.push(`    <text x="${168}" y="${y}" font-size="13" fill="${accent}">·</text>`);
-  out.push(`    <text x="180" y="${y}" font-size="13" font-weight="bold" fill="${c.value}">${value}</text>`);
+  out.push(`    <text x="180" y="${y}" font-size="13" font-weight="bold" fill="${c.value}">${esc(value)}</text>`);
   out.push(`  </g>`);
 }
 
 function head(out, c, { y, label, accent, begin }) {
   out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="${begin}s" fill="freeze"/>`);
   out.push(`    <rect x="32" y="${y - 10}" width="3" height="14" rx="1.5" fill="${accent}"><animate attributeName="width" from="0" to="3" dur="0.25s" begin="${(begin + 0.15).toFixed(2)}s" fill="freeze"/></rect>`);
-  out.push(`    <text x="44" y="${y + 1}" font-size="11" fill="${c.head}">${label}</text>`);
+  out.push(`    <text x="44" y="${y + 1}" font-size="11" fill="${c.head}">${esc(label)}</text>`);
   out.push(`  </g>`);
 }
 
@@ -37,7 +41,7 @@ function bullet(out, c, { y, text, begin, accent, cursor }) {
   const sw = text.length * 8;
   out.push(`  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="${begin}s" fill="freeze"/>`);
   out.push(`    <text x="48" y="${y + 2}" font-size="13" fill="${accent}">\u2192</text>`);
-  out.push(`    <text x="74" y="${y}" font-size="13" fill="${c.value}">${text}</text>`);
+  out.push(`    <text x="74" y="${y}" font-size="13" fill="${c.value}">${esc(text)}</text>`);
   if (cursor) {
     out.push(`    <rect x="${74 + sw + 6}" y="${y - 12}" width="9" height="16" fill="${c.blue}"><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>`);
   }
