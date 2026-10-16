@@ -1,0 +1,55 @@
+name: Update Profile Assets
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily at 04:17 UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      # Generator sources only — NOT scripts/data.snapshot.json, so the bot's
+      # own snapshot commit cannot re-trigger this workflow.
+      - "scripts/generate-svgs.mjs"
+      - "scripts/check-contrast.mjs"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+
+      - name: Generate SVG assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-svgs.mjs
+
+      - name: Check WCAG contrast
+        run: node scripts/check-contrast.mjs
+
+      - name: Commit refreshed assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets scripts/data.snapshot.json
+          if git diff --cached --quiet; then
+            echo "No asset changes."
+          else
+            git commit -m "chore: refresh profile assets"
+            git push
+          fi
