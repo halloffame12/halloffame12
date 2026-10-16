@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 48" preserveAspectRatio="xMidYMid meet" shape-rendering="crispEdges" font-family="'Courier New',Consolas,monospace" role="img" aria-labelledby="t-light-divider">
+<title id="t-light-divider">Pixel divider</title>
+<desc>Pac-Man eating pellets with a ghost in pursuit.</desc>
+<style>
+.rm-show{display:none}
+.tw{animation:tw 2.4s steps(2) infinite}
+.win{animation:win 3.2s steps(2) infinite}
+.bob{animation:bob .7s steps(2) infinite}
+.bl{animation:bl 1.1s steps(2) infinite}
+.coin{animation:coin 1.3s steps(4) infinite;transform-box:fill-box;transform-origin:center}
+.steam{animation:steam 1.7s steps(4) infinite}
+.drift1{animation:drift1 46s linear infinite}
+.drift2{animation:drift2 28s linear infinite}
+.fly{animation:fly 12s steps(24,end) infinite}
+.snk{animation:snk 15s steps(30,end) infinite}
+.gh{animation:gh 13s steps(26,end) infinite}
+.pac{animation:pac 7s linear infinite}
+.gst{animation:gst 7s linear infinite}
+.shoot{animation:shoot 9s linear infinite}
+.shoot2{animation:shoot2 11s linear infinite}
+.dash{animation:dash 1s linear infinite}
+.dash2{animation:dash 2s linear infinite}
+.tscr{animation:tscr 1.6s steps(2) infinite}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 9s steps(10,end) infinite}
+.hb{animation:hb .9s steps(2) infinite}
+.cyc{animation:cyc 16s steps(1,end) infinite}
+@keyframes tw{50%{opacity:.18}}
+@keyframes win{50%{opacity:.22}}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes bl{50%{opacity:0}}
+@keyframes coin{50%{transform:scaleX(.18)}}
+@keyframes steam{from{transform:translateY(0);opacity:1}to{transform:translateY(-9px);opacity:0}}
+@keyframes drift1{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes drift2{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes fly{from{transform:translate(-90px,232px)}to{transform:translate(900px,204px)}}
+@keyframes snk{from{transform:translateX(-150px)}to{transform:translateX(900px)}}
+@keyframes gh{from{transform:translateX(830px)}to{transform:translateX(-60px)}}
+@keyframes pac{from{transform:translateX(-60px)}to{transform:translateX(880px)}}
+@keyframes gst{from{transform:translateX(880px)}to{transform:translateX(-60px)}}
+@keyframes shoot{0%{transform:translate(0,0);opacity:0}6%{opacity:1}18%{transform:translate(150px,26px);opacity:0}100%{transform:translate(150px,26px);opacity:0}}
+@keyframes shoot2{0%{transform:translate(0,0);opacity:0}5%{opacity:1}16%{transform:translate(-170px,22px);opacity:0}100%{transform:translate(-170px,22px);opacity:0}}
+@keyframes dash{to{stroke-dashoffset:-32}}
+@keyframes tscr{50%{opacity:.15}}
+@keyframes grow{0%{transform:scaleX(0)}26%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes hb{50%{opacity:.45}}
+@keyframes cyc{0%{opacity:1}28%{opacity:1}30%{opacity:0}100%{opacity:0}}
+
+@media (prefers-reduced-motion: reduce){
+  .tw,.win,.bob,.bl,.coin,.steam,.drift1,.drift2,.fly,.snk,.gh,.shoot,.shoot2,.dash,.dash2,.tscr,.grow,.hb,.cyc,.pac,.gst{animation:none!important}
+  .rm-hide{display:none}
+  .rm-show{display:inline}
+  .mouth{display:none}
+}
+</style>
+<rect x="0" y="0" width="820" height="48" rx="10" fill="#f2f8ff"/><rect x="46" y="21" width="6" height="6" fill="#9c6200"/><rect x="86" y="21" width="6" height="6" fill="#9c6200"/><rect x="126" y="21" width="6" height="6" fill="#9c6200"/><rect x="166" y="21" width="6" height="6" fill="#9c6200"/><rect x="206" y="21" width="6" height="6" fill="#9c6200"/><rect x="246" y="21" width="6" height="6" fill="#9c6200"/><rect x="286" y="21" width="6" height="6" fill="#9c6200"/><rect x="326" y="21" width="6" height="6" fill="#9c6200"/><rect x="366" y="21" width="6" height="6" fill="#9c6200"/><rect x="406" y="21" width="6" height="6" fill="#9c6200"/><rect x="446" y="21" width="6" height="6" fill="#9c6200"/><rect x="486" y="21" width="6" height="6" fill="#9c6200"/><rect x="526" y="21" width="6" height="6" fill="#9c6200"/><rect x="566" y="21" width="6" height="6" fill="#9c6200"/><rect x="606" y="21" width="6" height="6" fill="#9c6200"/><rect x="646" y="21" width="6" height="6" fill="#9c6200"/><rect x="686" y="21" width="6" height="6" fill="#9c6200"/><rect x="726" y="21" width="6" height="6" fill="#9c6200"/><rect x="766" y="21" width="6" height="6" fill="#9c6200"/><g class="pac"><g transform="translate(0,9)"><rect x="0" y="6" width="30" height="18" fill="#9c6200"/><rect x="2" y="2" width="26" height="26" fill="#9c6200"/><rect x="4" y="4" width="22" height="22" fill="#9c6200"/><rect x="15" y="6" width="4" height="4" fill="#0b1b3a"/><polygon class="mouth" fill="#f2f8ff" points="16,15 34,15 34,15"><animate attributeName="points" dur=".5s" repeatCount="indefinite" calcMode="discrete" values="16,15 34,15 34,15;16,15 34,6 34,24;16,15 34,15 34,15;16,15 34,6 34,24"/></polygon></g></g><g class="gst"><g transform="translate(0,11)"><rect x="6" y="0" width="12" height="3" fill="#a3005f"/><rect x="3" y="3" width="18" height="3" fill="#a3005f"/><rect x="0" y="6" width="24" height="3" fill="#a3005f"/><rect x="0" y="9" width="6" height="3" fill="#a3005f"/><rect x="9" y="9" width="6" height="3" fill="#a3005f"/><rect x="18" y="9" width="6" height="3" fill="#a3005f"/><rect x="0" y="12" width="24" height="3" fill="#a3005f"/><rect x="0" y="15" width="24" height="3" fill="#a3005f"/><rect x="6" y="9" width="6" height="6" fill="#ffffff"/><rect x="15" y="9" width="6" height="6" fill="#ffffff"/><rect x="8" y="11" width="3" height="3" fill="#1b2547"/><rect x="17" y="11" width="3" height="3" fill="#1b2547"/></g></g><rect x="2" y="2" width="816" height="44" rx="8" fill="none" stroke="#9db4d0" stroke-width="2"/>
+</svg>
