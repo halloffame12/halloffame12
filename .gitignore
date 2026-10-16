@@ -1,0 +1,7 @@
+# Local preview / verification artifacts
+.preview.html
+preview/
+
+# Node
+node_modules/
+npm-debug.log*
