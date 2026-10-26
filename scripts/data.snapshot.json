@@ -2,7 +2,7 @@
   "repos": 69,
   "followers": 5,
   "stars": 1,
-  "contributions": 683,
+  "contributions": 681,
   "languages": [
     [
       "TypeScript",
@@ -34,7 +34,7 @@
     ]
   ],
   "calendar": {
-    "totalContributions": 683,
+    "totalContributions": 681,
     "months": [
       {
         "name": "Oct",
@@ -2123,6 +2123,11 @@
           {
             "date": "2026-10-25",
             "weekday": 0,
+            "contributionCount": 0
+          },
+          {
+            "date": "2026-10-26",
+            "weekday": 1,
             "contributionCount": 0
           }
         ]
