@@ -17,7 +17,11 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" alt="Make useful things" width="360" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" alt="Make useful things" width="360" />
+  </picture>
 </p>
 
 <table>
@@ -36,7 +40,11 @@ My favourite work sits between **careful backend engineering, local developer to
 <td width="42%" valign="top">
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" alt="A small illustrated profile card for Sumit Chauhan" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" alt="A small illustrated profile card for Sumit Chauhan" width="100%" />
+  </picture>
 </p>
 
 </td>
@@ -44,13 +52,21 @@ My favourite work sits between **careful backend engineering, local developer to
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" alt="" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" alt="" width="100%" />
+  </picture>
 </p>
 
 ## THE WORKBENCH
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" alt="A visual inventory of Sumit's tools: Rust, TypeScript, Python, Dart, React, Flutter, Node.js, PostgreSQL, SQLite, Firebase, Docker and Linux" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" alt="A visual inventory of Sumit's tools: Rust, TypeScript, Python, Dart, React, Flutter, Node.js, PostgreSQL, SQLite, Firebase, Docker and Linux" width="100%" />
+  </picture>
 </p>
 
 <table>
@@ -105,13 +121,21 @@ My favourite work sits between **careful backend engineering, local developer to
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" alt="Three illustrated achievement stamps" width="72%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" alt="Three illustrated achievement stamps" width="72%" />
+  </picture>
 </p>
 
 ## THE FEATURED BUILD
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" alt="CTX blueprint: source files become a local code graph and searchable index" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" alt="CTX blueprint: source files become a local code graph and searchable index" width="100%" />
+  </picture>
 </p>
 
 ### [CTX](https://github.com/halloffame12/CTX)
@@ -131,13 +155,21 @@ It currently covers **TypeScript, JavaScript, Python, Rust and Go**, with instal
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" alt="CTX label: small maps for large codebases" width="420" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" alt="CTX label: small maps for large codebases" width="420" />
+  </picture>
 </p>
 
 ## THE OTHER ROOMS
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" alt="Illustrated project cards for Versz, AnonChat, Snake Learner and Restaurant QR Menu" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" alt="Illustrated project cards for Versz, AnonChat, Snake Learner and Restaurant QR Menu" width="100%" />
+  </picture>
 </p>
 
 <table>
@@ -186,7 +218,11 @@ A restaurant menu and ordering platform using React, Fastify and PostgreSQL on N
 ## THE NEXT PAGE
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" alt="A little illustrated roadmap with three next steps" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" alt="A little illustrated roadmap with three next steps" width="100%" />
+  </picture>
 </p>
 
 **01 / CTX** — improve language coverage, navigation and release ergonomics.<br />
@@ -196,7 +232,11 @@ A restaurant menu and ordering platform using React, Fastify and PostgreSQL on N
 ## NOTES FROM THE FIELD
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" alt="A hand-drawn activity card showing 69 public repositories, 5 followers and 688 contributions in the checked-in snapshot" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" alt="A hand-drawn activity card showing 69 public repositories, 5 followers and 688 contributions in the checked-in snapshot" width="100%" />
+  </picture>
 </p>
 
 <details>
@@ -223,7 +263,11 @@ I’m interested in software engineering, backend systems, developer tools, open
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" alt="Illustrated footer reading see you in the next build" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" alt="Illustrated footer reading see you in the next build" width="100%" />
+  </picture>
 </p>
 
 <p align="center"><sub>Made in Delhi NCR · currently learning, shipping and keeping good notes.</sub></p>
