@@ -15,8 +15,8 @@
     <text x="88" y="215" fill="#e65d3f" font-family="Georgia,serif" font-size="34" font-weight="700">CHAUVAN</text>
   </g>
   <g fill="none" stroke="#b9ff4a" stroke-width="3">
-    <path d="M1012 78l92 66-92 66M1104 144l50-70"/>
-    <circle cx="1012" cy="78" r="7" fill="#e65d3f"/><circle cx="1104" cy="144" r="7" fill="#b9ff4a"/><circle cx="1012" cy="210" r="7" fill="#3ec7db"/><circle cx="1154" cy="74" r="7" fill="#e65d3f"/>
+    <path d="M1018 246l62-24 62 24-62 24z"/>
+    <circle cx="1018" cy="246" r="7" fill="#e65d3f"/><circle cx="1080" cy="222" r="7" fill="#b9ff4a"/><circle cx="1142" cy="246" r="7" fill="#3ec7db"/>
   </g>
   <text x="650" y="78" fill="#b9ff4a" font-family="ui-monospace,monospace" font-size="14" letter-spacing="3">FIELD NOTE / 001</text>
   <text x="650" y="122" fill="#eaf2e4" font-family="Georgia,serif" font-size="32">software with a point of view.</text>
