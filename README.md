@@ -1,104 +1,144 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-light.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-dark.svg" alt="Sumit Chauhan — software engineer and independent builder" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-light.svg" alt="Sumit Chauhan — software engineer and independent builder" width="100%" />
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://sumitchauhan.me"><strong>PORTFOLIO</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/"><strong>LINKEDIN</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="mailto:sumitchauhan10062004@gmail.com"><strong>EMAIL</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/halloffame12"><strong>GITHUB</strong></a>
+  <a href="https://sumitchauhan.me">portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/">linkedin</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:sumitchauhan10062004@gmail.com">email</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/halloffame12">github</a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/ribbon.svg" alt="A small animated ribbon reading build, test, ship, repeat" width="76%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" alt="Make useful things" width="360" />
 </p>
-
-## `HELLO, I'M SUMIT`
-
-I’m a software engineer and independent builder from **Delhi NCR, India**, currently studying **BS-MS Computer Science and Data Analytics at IIT Patna**.
-
-I like turning ambitious ideas into calm, useful software: local developer tools, real-time products, cross-platform apps, and small experiments that teach me something new. I’m happiest where product thinking meets careful engineering.
 
 <table>
 <tr>
-<td width="55%" valign="top">
+<td width="58%" valign="top">
 
-### THE WORKSHOP
+## THE SHORT VERSION
 
-`rust` `typescript` `python` `dart`
+I’m **Sumit Chauhan**, a software engineer and independent builder from Delhi NCR, India.
 
-`react` `flutter` `node.js` `fastify`
+I study **Computer Science and Data Analytics at IIT Patna** and spend my spare hours making tools, products and experiments that turn complicated ideas into something people can use.
 
-`sqlite` `postgresql` `firebase` `socket.io`
-
-`tree-sitter` `mcp` `docker` `linux`
+My favourite work sits between **careful backend engineering, local developer tools, real-time products and cross-platform software**.
 
 </td>
-<td width="45%" valign="top">
+<td width="42%" valign="top">
 
-### THE SCOREBOARD
-
-**IIT Patna**<br />
-BS-MS CS & Data Analytics
-
-**8.4**<br />
-first-semester CGPA
-
-**Open source**<br />
-winget-pkgs · awesome-mcp-servers
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" alt="A small illustrated profile card for Sumit Chauhan" width="100%" />
+</p>
 
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/ruler.svg" alt="" width="100%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" alt="" width="100%" />
 </p>
 
-## `STAMPS ON THE PASSPORT`
+## THE WORKBENCH
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" alt="A visual inventory of Sumit's tools: Rust, TypeScript, Python, Dart, React, Flutter, Node.js, PostgreSQL, SQLite, Firebase, Docker and Linux" width="100%" />
+</p>
 
 <table>
 <tr>
-<td align="center">🏅<br /><strong>NASA SPACE APPS 2025</strong><br /><sub>Top 4 · DTC regional</sub></td>
-<td align="center">🧰<br /><strong>CTX MAINTAINER</strong><br /><sub>Local code intelligence tools</sub></td>
-<td align="center">🌱<br /><strong>OPEN SOURCE</strong><br /><sub>Community contributions</sub></td>
+<td width="33%" valign="top">
+
+### LANGUAGES
+
+`Rust`<br />
+`TypeScript`<br />
+`Python`<br />
+`Dart`<br />
+`C++`<br />
+`Go`
+
+</td>
+<td width="33%" valign="top">
+
+### BUILDING WITH
+
+`React`<br />
+`Flutter`<br />
+`Node.js`<br />
+`Fastify`<br />
+`PostgreSQL`<br />
+`SQLite`
+
+</td>
+<td width="33%" valign="top">
+
+### HABITS
+
+`Linux`<br />
+`Git`<br />
+`Docker`<br />
+`tree-sitter`<br />
+`Socket.IO`<br />
+`Firebase`
+
+</td>
 </tr>
 </table>
 
-## `THE MAIN ATTRACTION`
+## THE PINBOARD
+
+<table>
+<tr>
+<td align="center" width="33%">🏅<br /><strong>NASA SPACE APPS 2025</strong><br /><sub>Top 4 · DTC regional</sub></td>
+<td align="center" width="33%">🧭<br /><strong>CTX MAINTAINER</strong><br /><sub>Open-source codebase tooling</sub></td>
+<td align="center" width="33%">🌱<br /><strong>COMMUNITY BUILDER</strong><br /><sub>winget-pkgs · awesome-mcp-servers</sub></td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/ctx-architecture.svg" alt="CTX workshop diagram showing source code becoming a searchable local code map and toolset" width="100%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" alt="Three illustrated achievement stamps" width="72%" />
 </p>
 
-### [CTX](https://github.com/halloffame12/CTX) · a local map for large codebases
-
-CTX is my main open-source project: a **Rust-based, local-first MCP server** that parses source with tree-sitter, builds a dependency-aware code graph, stores an index in SQLite, and provides **11 documented tools** for navigating a codebase.
-
-It supports TypeScript, JavaScript, Python, Rust and Go, with distribution through Cargo, npm, Homebrew, Scoop and winget.
+## THE FEATURED BUILD
 
 <p align="center">
-  <a href="https://ctx.sumitchauhan.me">TRY THE PLAYGROUND</a>
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" alt="CTX blueprint: source files become a local code graph and searchable index" width="100%" />
+</p>
+
+### [CTX](https://github.com/halloffame12/CTX)
+
+**A local map for understanding a codebase.**
+
+CTX is my main open-source build: a Rust-based, local-first MCP server that parses source with tree-sitter, connects symbols into a dependency-aware graph, stores an index in SQLite, and exposes 11 documented tools for navigating a project.
+
+It currently covers **TypeScript, JavaScript, Python, Rust and Go**, with installation paths through **Cargo, npm, Homebrew, Scoop and winget**.
+
+<p align="center">
+  <a href="https://ctx.sumitchauhan.me"><strong>play with it</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://halloffame12.github.io/CTX">READ THE DOCS</a>
+  <a href="https://halloffame12.github.io/CTX"><strong>read the docs</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/halloffame12/CTX">VIEW THE SOURCE</a>
+  <a href="https://github.com/halloffame12/CTX"><strong>inspect the source</strong></a>
 </p>
-
-<p align="center"><a href="https://halloffame12.github.io/CTX">Installation instructions →</a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/ctx-note.svg" alt="CTX note card: make the codebase easier to understand" width="78%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" alt="CTX label: small maps for large codebases" width="420" />
 </p>
 
-## `THE ARCADE FLOOR`
+## THE OTHER ROOMS
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" alt="Illustrated project cards for Versz, AnonChat, Snake Learner and Restaurant QR Menu" width="100%" />
+</p>
 
 <table>
 <tr>
@@ -106,22 +146,18 @@ It supports TypeScript, JavaScript, Python, Rust and Go, with distribution throu
 
 ### [VERSZ](https://github.com/halloffame12/versz-app)
 
-**Founder & CTO**
+I’m the founder and CTO of this cross-platform social debate product. The repository is built around Flutter with Firebase, Node.js and Socket.IO.
 
-A cross-platform social debate product with live interaction. Built around Flutter, Firebase, Node.js and Socket.IO.
-
-<a href="https://versz.app">visit versz.app →</a>
+<a href="https://versz.app">visit the product →</a>
 
 </td>
 <td width="50%" valign="top">
 
 ### [ANONCHAT](https://github.com/halloffame12/AnonChat)
 
-**Real-time communication**
+A real-time anonymous communication app built with React, TypeScript and Socket.IO, with WebRTC-oriented media-room work.
 
-An anonymous communication app built with React, TypeScript and Socket.IO, with WebRTC-oriented media-room work.
-
-<a href="https://github.com/halloffame12/AnonChat">open the repo →</a>
+<a href="https://github.com/halloffame12/AnonChat">open the room →</a>
 
 </td>
 </tr>
@@ -130,9 +166,7 @@ An anonymous communication app built with React, TypeScript and Socket.IO, with 
 
 ### [SNAKE LEARNER](https://github.com/halloffame12/snake-game-ai)
 
-**Reinforcement-learning experiment**
-
-A Deep Q-Network learning experiment wrapped around the classic Snake game.
+A reinforcement-learning experiment using a Deep Q-Network to learn the classic Snake game.
 
 <a href="https://github.com/halloffame12/snake-game-ai">see the experiment →</a>
 
@@ -140,8 +174,6 @@ A Deep Q-Network learning experiment wrapped around the classic Snake game.
 <td width="50%" valign="top">
 
 ### [RESTAURANT QR MENU](https://github.com/halloffame12/restaurant-menu-prod)
-
-**Product build**
 
 A restaurant menu and ordering platform using React, Fastify and PostgreSQL on Neon.
 
@@ -151,61 +183,47 @@ A restaurant menu and ordering platform using React, Fastify and PostgreSQL on N
 </tr>
 </table>
 
+## THE NEXT PAGE
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/project-map.svg" alt="A hand-drawn map connecting Sumit's four featured projects" width="100%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" alt="A little illustrated roadmap with three next steps" width="100%" />
 </p>
 
-## `NEXT ON THE BENCH`
+**01 / CTX** — improve language coverage, navigation and release ergonomics.<br />
+**02 / VERSZ** — keep sharpening the real-time debate experience.<br />
+**03 / OPEN SOURCE** — contribute small, useful pieces to projects I rely on.
 
-<table>
-<tr><td>01</td><td><strong>CTX</strong></td><td>More language coverage, sharper navigation and a smoother release path.</td></tr>
-<tr><td>02</td><td><strong>VERSZ</strong></td><td>A stronger real-time debate experience across platforms.</td></tr>
-<tr><td>03</td><td><strong>OPEN SOURCE</strong></td><td>Small, useful contributions to tools other developers rely on.</td></tr>
-</table>
-
-## `FIELD NOTES`
+## NOTES FROM THE FIELD
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-light.v2.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" alt="GitHub contribution heatmap" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <a href="https://github.com/halloffame12?tab=repositories">69 public repositories</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/halloffame12">5 followers</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/halloffame12?tab=overview">688 contributions in the checked-in snapshot</a>
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" alt="A hand-drawn activity card showing 69 public repositories, 5 followers and 688 contributions in the checked-in snapshot" width="100%" />
 </p>
 
 <details>
-<summary>✦ Pull the lever for a secret note</summary>
+<summary>open the tiny secret drawer</summary>
 
 ```text
-GOOD BUILDING HABITS
+THE THREE RULES
 
-1. Make it work.
-2. Make it understandable.
-3. Make the next change less scary.
+make it work
+make it clear
+make the next change kinder
 ```
 
 </details>
 
-## `COME SAY HELLO`
+## DOOR'S OPEN
 
-If you’re building developer tools, backend systems, real-time products, or thoughtful open source, I’d love to compare notes.
+I’m interested in software engineering, backend systems, developer tools, open source and ambitious products with kind teams.
 
 <p align="center">
-  <a href="mailto:sumitchauhan10062004@gmail.com">sumitchauhan10062004@gmail.com</a>
+  <a href="mailto:sumitchauhan10062004@gmail.com"><strong>sumitchauhan10062004@gmail.com</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://sumitchauhan.me">sumitchauhan.me</a>
+  <a href="https://sumitchauhan.me"><strong>sumitchauhan.me</strong></a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/footer.svg" alt="Animated hand-drawn footer reading keep making good things" width="100%" />
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" alt="Illustrated footer reading see you in the next build" width="100%" />
 </p>
 
-<p align="center"><sub>Made in Delhi NCR with equal parts curiosity and persistence.</sub></p>
+<p align="center"><sub>Made in Delhi NCR · currently learning, shipping and keeping good notes.</sub></p>
