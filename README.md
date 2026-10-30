@@ -1,174 +1,93 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-light.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/hero-light.svg" alt="Sumit Chauhan — software engineer and independent builder" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/hero-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/hero-light.svg" alt="Sumit Chauhan — software engineer, student and independent builder" width="100%" />
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://sumitchauhan.me">portfolio</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/">linkedin</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:sumitchauhan10062004@gmail.com">email</a>
-  &nbsp;·&nbsp;
+  <a href="https://sumitchauhan.me">website</a> ·
+  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/">linkedin</a> ·
+  <a href="mailto:sumitchauhan10062004@gmail.com">email</a> ·
   <a href="https://github.com/halloffame12">github</a>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/wordmark.svg" alt="Make useful things" width="360" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/underbar-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/underbar-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/underbar-light.svg" alt="Build, inspect, improve" width="420" />
   </picture>
 </p>
 
-<table>
-<tr>
-<td width="58%" valign="top">
+## 00 / A NOTE FROM THE DESK
 
-## THE SHORT VERSION
+Most of my time goes into building software, figuring out why it broke, and making the next version less awkward.
 
-I’m **Sumit Chauhan**, a software engineer and independent builder from Delhi NCR, India.
+I’m **Sumit Chauhan**, a software engineer and first-year **BS-MS Computer Science and Data Analytics student at IIT Patna**. I work from Delhi NCR, usually with Rust, TypeScript, Flutter, backend systems, and a suspicious number of open tabs.
 
-I study **Computer Science and Data Analytics at IIT Patna** and spend my spare hours making tools, products and experiments that turn complicated ideas into something people can use.
-
-My favourite work sits between **careful backend engineering, local developer tools, real-time products and cross-platform software**.
-
-</td>
-<td width="42%" valign="top">
+The common thread is simple: understand the machinery, make a useful thing, then leave the machinery easier to understand.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/about-card.svg" alt="A small illustrated profile card for Sumit Chauhan" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/profile-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/profile-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/profile-light.svg" alt="Profile notes: IIT Patna, Delhi NCR, 8.4 first-semester CGPA, open to good engineering work" width="100%" />
   </picture>
 </p>
 
-</td>
-</tr>
-</table>
+## 01 / THE DRAWERS
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/rule.svg" alt="" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/stack-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/stack-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/stack-light.svg" alt="Technical stack arranged as four labeled drawers" width="100%" />
   </picture>
 </p>
 
-## THE WORKBENCH
+`Rust` · `TypeScript` · `Python` · `Dart` · `C++` · `Go`<br />
+`React` · `Flutter` · `Node.js` · `Fastify` · `PostgreSQL` · `SQLite`<br />
+`tree-sitter` · `Socket.IO` · `Firebase` · `Docker` · `Linux` · `Git`
+
+## 02 / THE BIG BUILD
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/toolkit.svg" alt="A visual inventory of Sumit's tools: Rust, TypeScript, Python, Dart, React, Flutter, Node.js, PostgreSQL, SQLite, Firebase, Docker and Linux" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-light.svg" alt="CTX architecture: source files become a local graph, SQLite index and practical navigation tools" width="100%" />
   </picture>
 </p>
 
-<table>
-<tr>
-<td width="33%" valign="top">
+### [CTX](https://github.com/halloffame12/CTX) / codebase navigation for people who have lost the plot
 
-### LANGUAGES
+CTX is my main open-source project. It is a Rust-based, local-first MCP server that parses source with tree-sitter, connects symbols into a dependency-aware graph, stores an index in SQLite, and exposes **11 documented tools** for navigating a project.
 
-`Rust`<br />
-`TypeScript`<br />
-`Python`<br />
-`Dart`<br />
-`C++`<br />
-`Go`
-
-</td>
-<td width="33%" valign="top">
-
-### BUILDING WITH
-
-`React`<br />
-`Flutter`<br />
-`Node.js`<br />
-`Fastify`<br />
-`PostgreSQL`<br />
-`SQLite`
-
-</td>
-<td width="33%" valign="top">
-
-### HABITS
-
-`Linux`<br />
-`Git`<br />
-`Docker`<br />
-`tree-sitter`<br />
-`Socket.IO`<br />
-`Firebase`
-
-</td>
-</tr>
-</table>
-
-## THE PINBOARD
-
-<table>
-<tr>
-<td align="center" width="33%">🏅<br /><strong>NASA SPACE APPS 2025</strong><br /><sub>Top 4 · DTC regional</sub></td>
-<td align="center" width="33%">🧭<br /><strong>CTX MAINTAINER</strong><br /><sub>Open-source codebase tooling</sub></td>
-<td align="center" width="33%">🌱<br /><strong>COMMUNITY BUILDER</strong><br /><sub>winget-pkgs · awesome-mcp-servers</sub></td>
-</tr>
-</table>
+The current repository documents support for **TypeScript, JavaScript, Python, Rust and Go**, with distribution through Cargo, npm, Homebrew, Scoop and winget.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/stamps.svg" alt="Three illustrated achievement stamps" width="72%" />
-  </picture>
-</p>
-
-## THE FEATURED BUILD
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-blueprint.svg" alt="CTX blueprint: source files become a local code graph and searchable index" width="100%" />
-  </picture>
-</p>
-
-### [CTX](https://github.com/halloffame12/CTX)
-
-**A local map for understanding a codebase.**
-
-CTX is my main open-source build: a Rust-based, local-first MCP server that parses source with tree-sitter, connects symbols into a dependency-aware graph, stores an index in SQLite, and exposes 11 documented tools for navigating a project.
-
-It currently covers **TypeScript, JavaScript, Python, Rust and Go**, with installation paths through **Cargo, npm, Homebrew, Scoop and winget**.
-
-<p align="center">
-  <a href="https://ctx.sumitchauhan.me"><strong>play with it</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://halloffame12.github.io/CTX"><strong>read the docs</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/halloffame12/CTX"><strong>inspect the source</strong></a>
+  <a href="https://ctx.sumitchauhan.me">playground</a> ·
+  <a href="https://halloffame12.github.io/CTX">documentation</a> ·
+  <a href="https://github.com/halloffame12/CTX">source code</a>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/ctx-label.svg" alt="CTX label: small maps for large codebases" width="420" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-note-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-note-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/ctx-note-light.svg" alt="Small note: map the codebase before changing it" width="520" />
   </picture>
 </p>
 
-## THE OTHER ROOMS
+## 03 / OTHER EXPERIMENTS
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/projects.svg" alt="Illustrated project cards for Versz, AnonChat, Snake Learner and Restaurant QR Menu" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/projects-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/projects-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/projects-light.svg" alt="Project index for Versz, AnonChat, Snake Learner and Restaurant QR Menu" width="100%" />
   </picture>
 </p>
 
@@ -178,7 +97,7 @@ It currently covers **TypeScript, JavaScript, Python, Rust and Go**, with instal
 
 ### [VERSZ](https://github.com/halloffame12/versz-app)
 
-I’m the founder and CTO of this cross-platform social debate product. The repository is built around Flutter with Firebase, Node.js and Socket.IO.
+Founder & CTO. A cross-platform social debate product built around Flutter, Firebase, Node.js and Socket.IO.
 
 <a href="https://versz.app">visit the product →</a>
 
@@ -187,9 +106,9 @@ I’m the founder and CTO of this cross-platform social debate product. The repo
 
 ### [ANONCHAT](https://github.com/halloffame12/AnonChat)
 
-A real-time anonymous communication app built with React, TypeScript and Socket.IO, with WebRTC-oriented media-room work.
+A real-time anonymous communication app built with React, TypeScript and Socket.IO, with WebRTC-oriented room work.
 
-<a href="https://github.com/halloffame12/AnonChat">open the room →</a>
+<a href="https://github.com/halloffame12/AnonChat">open the repository →</a>
 
 </td>
 </tr>
@@ -198,7 +117,7 @@ A real-time anonymous communication app built with React, TypeScript and Socket.
 
 ### [SNAKE LEARNER](https://github.com/halloffame12/snake-game-ai)
 
-A reinforcement-learning experiment using a Deep Q-Network to learn the classic Snake game.
+A Deep Q-Network experiment learning the classic Snake game.
 
 <a href="https://github.com/halloffame12/snake-game-ai">see the experiment →</a>
 
@@ -215,59 +134,72 @@ A restaurant menu and ordering platform using React, Fastify and PostgreSQL on N
 </tr>
 </table>
 
-## THE NEXT PAGE
+## 04 / THINGS I’VE PICKED UP
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/next-page.svg" alt="A little illustrated roadmap with three next steps" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/marks-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/marks-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/marks-light.svg" alt="NASA Space Apps 2025 Top 4 DTC regional, CTX maintainer and open-source contributor marks" width="100%" />
   </picture>
 </p>
 
-**01 / CTX** — improve language coverage, navigation and release ergonomics.<br />
-**02 / VERSZ** — keep sharpening the real-time debate experience.<br />
-**03 / OPEN SOURCE** — contribute small, useful pieces to projects I rely on.
+- **NASA Space Apps Challenge 2025:** Top 4, DTC regional.
+- **CTX:** maintainer of a local code-intelligence project.
+- **Open source:** contributions to `microsoft/winget-pkgs` and `awesome-mcp-servers`.
 
-## NOTES FROM THE FIELD
+## 05 / ON THE BENCH
+
+Currently spending time on:
+
+- making CTX more useful on real codebases;
+- improving the real-time feel of Versz;
+- learning where developer tooling becomes genuinely helpful instead of merely clever;
+- finding good people to build with.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/telemetry.svg" alt="A hand-drawn activity card showing 69 public repositories, 5 followers and 688 contributions in the checked-in snapshot" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/bench-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/bench-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/bench-light.svg" alt="A workbench with three labeled ongoing projects" width="100%" />
   </picture>
 </p>
+
+## 06 / FIELD NOTES
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-light.v2.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-light.v2.svg" alt="GitHub contribution heatmap" width="100%" />
+  </picture>
+</p>
+
+<p align="center">69 public repositories · 5 followers · 688 contributions in the checked-in snapshot</p>
 
 <details>
-<summary>open the tiny secret drawer</summary>
+<summary>open the hidden drawer</summary>
 
 ```text
-THE THREE RULES
-
-make it work
-make it clear
-make the next change kinder
+I once fixed a bug by deleting the feature.
+The feature was the bug.
 ```
 
 </details>
 
-## DOOR'S OPEN
+## 07 / LEAVE A NOTE
 
-I’m interested in software engineering, backend systems, developer tools, open source and ambitious products with kind teams.
+Interested in backend systems, developer tools, open source, real-time products or careful engineering?
 
 <p align="center">
-  <a href="mailto:sumitchauhan10062004@gmail.com"><strong>sumitchauhan10062004@gmail.com</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://sumitchauhan.me"><strong>sumitchauhan.me</strong></a>
+  <a href="mailto:sumitchauhan10062004@gmail.com">sumitchauhan10062004@gmail.com</a> ·
+  <a href="https://sumitchauhan.me">sumitchauhan.me</a>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" />
-    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/atelier/footer.svg" alt="Illustrated footer reading see you in the next build" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/footer-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/footer-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/studio/footer-light.svg" alt="A quiet animated signal line reading keep building" width="100%" />
   </picture>
 </p>
-
-<p align="center"><sub>Made in Delhi NCR · currently learning, shipping and keeping good notes.</sub></p>
