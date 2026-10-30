@@ -1,325 +1,210 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/hero-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/hero-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/hero-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/hero-light.v2.svg" />
-    <img alt="Sumit Chauhan — pixel-art arcade hero" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/hero-dark.v2.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/hero-dark.svg" alt="Sumit Chauhan — software engineer building a digital universe" width="100%" />
   </picture>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/profile-particles.gif" alt="Animated constellation particle field" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://sumitchauhan.me">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/">LinkedIn</a> ·
+  <a href="mailto:sumitchauhan10062004@gmail.com">Email</a> ·
+  <a href="https://github.com/halloffame12">GitHub</a>
+</p>
+
+<p align="center">
+  <code>software engineer</code> <code>open-source builder</code> <code>AI tooling</code> <code>Delhi NCR, India</code>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1600&color=00FF99&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+social+debate+platform.;NASA+Space+Apps+2025+-+Top+4+%28DTC+regional%29.;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science.;Building+in+public+-+ship+everywhere." />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1600&color=00875A&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+social+debate+platform.;NASA+Space+Apps+2025+-+Top+4+%28DTC+regional%29.;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science.;Building+in+public+-+ship+everywhere." />
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&pause=1600&color=00FF99&center=true&vCenter=true&width=850&lines=Open+Source+Engineer+-+AI-Driven+Automation+%26+Developer+Tooling.;Maintainer+of+ctx+-+an+MCP+code-intelligence+server+(Rust+%2B+TypeScript).;Founder+%40+Versz+-+live+social+debate+platform.;NASA+Space+Apps+2025+-+Top+4+%28DTC+regional%29.;IIT+Patna+-+B.S.+Computer+Science+%26+Data+Science.;Building+in+public+-+ship+everywhere." alt="Typing animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-constellation.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-constellation-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-constellation.svg" alt="" width="100%" />
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://sumitchauhan.me"><img src="https://img.shields.io/badge/Portfolio-sumitchauhan.me-00FF99?style=for-the-badge&logo=google-chrome&logoColor=black" /></a>
-  <a href="https://github.com/halloffame12"><img src="https://img.shields.io/badge/GitHub-halloffame12-181717?style=for-the-badge&logo=github" /></a>
-  <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/"><img src="https://img.shields.io/badge/LinkedIn-Sumit%20Chauhan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:sumitchauhan10062004@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+## `PLAYER PROFILE`
+
+I’m **Sumit Chauhan**, a first-year BS-MS Computer Science and Data Analytics student at **IIT Patna**. I build useful systems from scratch: code intelligence for AI agents, real-time products, and experiments that make software feel more capable.
+
+My current direction is the intersection of **AI developer tooling, backend architecture, open source, Rust, MCP, code intelligence, and cross-platform engineering**. I care about clear interfaces, dependable systems, and shipping things people can actually use.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `LOADOUT`
+
+- **Primary:** Rust, TypeScript, Python, Dart
+- **Product:** React, Flutter, Node.js, Fastify
+- **Systems:** MCP, tree-sitter, SQLite, PostgreSQL
+- **Realtime:** Socket.IO, WebRTC, Firebase
+- **Workbench:** Linux, Git, GitHub, Docker, VS Code
+
+</td>
+<td width="50%" valign="top">
+
+### `MISSION CONTROL`
+
+```text
+role       software engineer / builder
+focus      AI tooling + backend systems
+education  IIT Patna · BS-MS CS & Data Analytics
+signal     8.4 first-semester CGPA
+status     open to strong engineering opportunities
+```
+
+</td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/IIT_Patna-CS_%26_Data_Science-FF7A00?style=for-the-badge&logo=google-scholar&logoColor=white" />
-  <img src="https://img.shields.io/badge/NASA_Space_Apps_2025-Top_4_DTC-0B3D91?style=for-the-badge&logo=nasa&logoColor=white" />
-  <img src="https://img.shields.io/badge/OSS-Maintainer-3FB950?style=for-the-badge&logo=opensourceinitiative&logoColor=white" />
-  <img src="https://img.shields.io/badge/Open_to-SDE_Intern_Roles-00FF99?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Rust-0B0F1E?style=flat-square&logo=rust&logoColor=FFAA55" alt="Rust" />
+  <img src="https://img.shields.io/badge/TypeScript-0B0F1E?style=flat-square&logo=typescript&logoColor=35D9FF" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Python-0B0F1E?style=flat-square&logo=python&logoColor=A3FF7A" alt="Python" />
+  <img src="https://img.shields.io/badge/Flutter-0B0F1E?style=flat-square&logo=flutter&logoColor=35D9FF" alt="Flutter" />
+  <img src="https://img.shields.io/badge/PostgreSQL-0B0F1E?style=flat-square&logo=postgresql&logoColor=A78BFA" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MCP-0B0F1E?style=flat-square&logoColor=FF5CA8" alt="Model Context Protocol" />
 </p>
 
 <p align="center">
   <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/card-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/card-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/card-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/card-light.v2.svg" />
-    <img alt="Sumit Chauhan — player stat card" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/card-dark.v2.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-wave.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-wave-light.svg" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/divider-wave.svg" alt="" width="100%" />
   </picture>
 </p>
 
+## `ACHIEVEMENTS UNLOCKED`
+
+<table>
+<tr>
+<td>🛰️ <strong>SPACE APPS 2025</strong><br /><sub>Top 4 · DTC regional</sub></td>
+<td>🧭 <strong>CTX MAINTAINER</strong><br /><sub>Rust MCP code-intelligence server</sub></td>
+<td>📦 <strong>OPEN SOURCE</strong><br /><sub>Contributed to winget-pkgs and awesome-mcp-servers</sub></td>
+</tr>
+</table>
+
 <p align="center">
-  <a href="https://glama.ai/mcp/servers/halloffame12/CTX">
-    <img src="https://glama.ai/mcp/servers/halloffame12/CTX/badges/score.svg" alt="Glama MCP Quality Score for CTX" />
-  </a>
+  <img src="https://img.shields.io/badge/achievement%20system-verified%20only-35D9FF?style=flat-square&labelColor=10172A" alt="Verified achievements only" />
 </p>
 
----
+## `THE ENGINEERING LAB`
 
-<div align="center">
-  <strong>On this page</strong>
-  &nbsp;·&nbsp; <a href="#about"><code>about</code></a>
-  &nbsp;·&nbsp; <a href="#skills"><code>skills</code></a>
-  &nbsp;·&nbsp; <a href="#journey"><code>quest-log</code></a>
-  &nbsp;·&nbsp; <a href="#open-source"><code>open-source</code></a>
-  &nbsp;·&nbsp; <a href="#projects"><code>projects</code></a>
-  &nbsp;·&nbsp; <a href="#analytics"><code>analytics</code></a>
-  &nbsp;·&nbsp; <a href="#contact"><code>contact</code></a>
-</div>
+### ⚡ [CTX](https://github.com/halloffame12/CTX) · code intelligence for AI coding agents
 
----
-
-<h2 align="center" id="about">👨‍💻 About</h2>
+CTX is my main open-source build: a **Rust-based, local-first MCP server** that parses code with tree-sitter, builds a dependency-aware graph, stores an index in SQLite, and exposes semantic tools to AI coding agents. The repository documents **11 MCP tools**, support for TypeScript, JavaScript, Python, Rust and Go, plus npm, Cargo, Homebrew, Scoop and winget distribution.
 
 <p align="center">
-  <strong>Open Source Engineer</strong> specializing in <strong>AI-Driven Automation &amp; Developer Tooling</strong>. I design MCP servers, real-time systems, and cross-platform applications — with type safety, performance, and clean architecture as non-negotiables.
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/ctx-architecture.svg" alt="CTX architecture: source code flows through tree-sitter into a code graph and SQLite index, then into MCP tools and AI coding agents" width="100%" />
 </p>
 
 <p align="center">
-  <code>{ open-source }</code> <code>{ mcp-tooling }</code> <code>{ ai-automation }</code> <code>{ real-time-systems }</code> <code>{ typesafe-stack }</code> <code>{ developer-experience }</code>
+  <a href="https://ctx.sumitchauhan.me">Website</a> ·
+  <a href="https://halloffame12.github.io/CTX">Documentation</a> ·
+  <a href="https://glama.ai/mcp/servers/halloffame12/CTX">Glama listing</a> ·
+  <a href="https://github.com/halloffame12/CTX">Source</a>
 </p>
+
+```bash
+npx ctxai-cli
+# or: cargo install ctxai-cli
+```
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `PRODUCT BUILDS`
+
+**[Versz](https://github.com/halloffame12/versz-app)** — a cross-platform social debate product. I’m the founder and CTO; the repository uses Flutter and includes a real-time product stack around Firebase, Node.js and Socket.IO.
+
+**[AnonChat](https://github.com/halloffame12/AnonChat)** — a real-time anonymous communication app built with React, TypeScript and Socket.IO, with WebRTC-oriented media-room work in the codebase.
+
+</td>
+<td width="50%" valign="top">
+
+### `EXPERIMENTS`
+
+**[Snake AI](https://github.com/halloffame12/snake-game-ai)** — a reinforcement-learning experiment exploring a Deep Q-Network for Snake.
+
+**[Restaurant QR Menu](https://github.com/halloffame12/restaurant-menu-prod)** — a restaurant menu and ordering platform with a React frontend, Fastify API and PostgreSQL/Neon data layer.
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/project-grid.svg" alt="Project constellation connecting CTX, Versz, AnonChat, Snake AI and Restaurant QR Menu" width="100%" />
+</p>
+
+## `CURRENTLY IN THE OVEN`
+
+- Making **CTX** more useful for real-world codebases, language coverage and AI-agent workflows.
+- Growing **Versz** as a cross-platform, real-time debate experience.
+- Exploring the boundary between **code graphs, MCP and dependable AI developer tools**.
+- Looking for thoughtful collaboration in software engineering, AI infrastructure and open source.
+
+## `LIVE TELEMETRY`
 
 <p align="center">
   <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github_dark" alt="GitHub contribution profile summary" width="100%" />
   </picture>
 </p>
-
-<h2 align="center" id="skills">🛠️ Skills &amp; Expertise</h2>
-
-<p align="center">
-  Language bars in the player card above are computed from the <strong>primary language of every public repository</strong> — no hand-waving.
-</p>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/MCP-Model_Context_Protocol-00FF99?style=flat-square&logo=openai&logoColor=black" />
-  <img src="https://img.shields.io/badge/tree--sitter-Parsing-1a1b27?style=flat-square&logo=rust&logoColor=white" />
-</div>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="journey">🛤️ Quest Log</h2>
-
-<p align="center">
-  🎓 <strong>IIT Patna</strong> — B.S. Computer Science &amp; Data Science · CGPA 8.4<br />
-  🚀 <strong>NASA Space Apps 2025</strong> — Top 4 · DTC regional<br />
-  💼 <strong>Rozana</strong> — MIS / Automation Intern<br />
-  🧪 <strong>OSF Preprints</strong> — BrowserOS research<br />
-  📍 <strong>Delhi, India</strong> — open to remote &amp; relocation
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="open-source">🌱 Open Source Impact</h2>
-
-<h3 align="center">🛠️ Maintainer — <a href="https://github.com/halloffame12/CTX">ctx</a> · MCP Code-Intelligence Server</h3>
-
-<p align="center">
-  Parses codebases with <strong>tree-sitter</strong> and exposes a semantic SQLite index through <strong>11 MCP tools</strong> — native code navigation for AI assistants.
-</p>
-
-<p align="center">
-  <code>npm install -g ctxai-cli</code> · <code>cargo install ctxai-cli</code> · <code>npx ctxai-cli</code>
-</p>
-
-<p align="center">
-  <code>brew tap halloffame12/CTX &amp;&amp; brew install ctx</code><br />
-  <code>scoop bucket add ctx https://github.com/halloffame12/scoop-ctx &amp;&amp; scoop install ctx</code> · <code>winget install halloffame12.CTX</code>
-</p>
-
-<p align="center">
-  <a href="https://github.com/halloffame12/CTX"><code>Repository</code></a> ·
-  <a href="https://halloffame12.github.io/CTX"><code>Docs</code></a> ·
-  <a href="https://github.com/halloffame12/homebrew-ctx"><code>Homebrew tap</code></a> ·
-  <a href="https://github.com/halloffame12/scoop-ctx"><code>Scoop bucket</code></a>
-</p>
-
-<h3 align="center">🙌 Contributions to Upstream</h3>
-
-<p align="center">
-  <a href="https://github.com/microsoft/winget-pkgs"><strong>Microsoft / winget-pkgs</strong></a> — packaging manifests<br />
-  <a href="https://github.com/punkpeye/awesome-mcp-servers"><strong>awesome-mcp-servers</strong></a> — MCP ecosystem curation<br />
-  <strong>MCP ecosystem</strong> — spec-aligned server tooling<br />
-  ⭐ Open to maintainers, RFCs, and good-first-issues
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="projects">📦 Featured Projects</h2>
-
-<h3 align="center">⚡ <a href="https://github.com/halloffame12/CTX">ctx</a> — MCP Code-Intelligence Server</h3>
-<p align="center">
-  <strong>TypeScript</strong> · <strong>Rust</strong> · tree-sitter · SQLite · MCP (stdio)<br />
-  Open-source MCP server that gives AI assistants semantic code navigation: <strong>11 MCP tools</strong>, a code graph, and dependency-aware queries.<br />
-  <a href="https://github.com/halloffame12/CTX"><code>Repository</code></a> · <a href="https://halloffame12.github.io/CTX"><code>Docs</code></a>
-</p>
-
-<h3 align="center">💬 <a href="https://github.com/halloffame12/versz-app">Versz</a> — Social Debate Platform</h3>
-<p align="center">
-  <strong>React</strong> · <strong>Flutter</strong> · Node.js · Firebase · Socket.IO<br />
-  Cross-platform, structured real-time debates — <strong>founded by me</strong>, running in production.<br />
-  <a href="https://versz.app"><code>Live — versz.app</code></a> · <a href="https://github.com/halloffame12/versz-app"><code>Repository</code></a>
-</p>
-
-<h3 align="center">🕵️ <a href="https://github.com/halloffame12/AnonChat">AnonChat</a> — Real-Time Anonymous Chat</h3>
-<p align="center">
-  <strong>Socket.IO</strong> · WebRTC · React<br />
-  Ephemeral rooms with peer-to-peer media — real-time to the core.<br />
-  <a href="https://github.com/halloffame12/AnonChat"><code>Repository</code></a> · <a href="https://github.com/halloffame12/AnonChatLive"><code>Live build</code></a>
-</p>
-
-<h3 align="center">🐍 <a href="https://github.com/halloffame12/snake-game-ai">Snake AI</a> — Deep Q-Learning Agent</h3>
-<p align="center">
-  <strong>Python</strong> · TensorFlow · Deep Q-Network<br />
-  An RL agent that teaches itself to play Snake from raw state — my first ML milestone.<br />
-  <a href="https://github.com/halloffame12/snake-game-ai"><code>Repository</code></a>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="building">🚧 Currently Building</h2>
-
-<p align="center">
-  🔧 <strong><a href="https://github.com/halloffame12/CTX">ctx</a></strong> — shipping MCP tools, language parsers, and release packaging<br />
-  💬 <strong><a href="https://github.com/halloffame12/versz-app">Versz</a></strong> — hardening the real-time debate stack in production<br />
-  🕵️ <strong><a href="https://github.com/halloffame12/AnonChat">AnonChat</a></strong> — peer-to-peer media rooms
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="analytics">📊 GitHub Analytics</h2>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github_dark&animation=load" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github&animation=load" />
-    <img alt="GitHub profile summary" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=halloffame12&theme=github&animation=load" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github_dark&animation=load" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github&animation=load" />
-    <img width="400" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=halloffame12&theme=github&animation=load" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github_dark&animation=load" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github&animation=load" />
-    <img width="400" alt="Languages" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=halloffame12&theme=github&animation=load" />
-  </picture>
-</p>
-
-<h3 align="center">📈 Contribution Activity</h3>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-light.v2.svg" />
-    <img alt="Contribution heatmap" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" width="100%" />
+    <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/contributions-dark.v2.svg" alt="Contribution heatmap generated from GitHub data" width="100%" />
   </picture>
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=halloffame12&theme=default&hide_border=true" />
-    <img src="https://streak-stats.demolab.com/?user=halloffame12&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-  </picture>
+  <a href="https://github.com/halloffame12?tab=repositories"><img src="https://img.shields.io/badge/public%20repositories-69-35D9FF?style=flat-square&labelColor=10172A" alt="69 public repositories" /></a>
+  <a href="https://github.com/halloffame12"><img src="https://img.shields.io/badge/followers-5-A3FF7A?style=flat-square&labelColor=10172A" alt="5 followers" /></a>
+  <a href="https://github.com/halloffame12?tab=overview"><img src="https://img.shields.io/badge/contributions%20(snapshot)-688-FF5CA8?style=flat-square&labelColor=10172A" alt="688 contributions in the checked-in snapshot" /></a>
 </p>
 
-<h3 align="center">🐍 Contribution Telemetry</h3>
+<details>
+<summary>🔐 Found a secret? Click to unlock</summary>
+
+```text
+ACCESS GRANTED
+The fastest debugger is usually a good night's sleep.
+The second fastest is printing the data structure.
+```
+
+</details>
+
+## `TRANSMISSION TERMINAL`
+
+```text
+$ whoami
+sumit@digital-universe:~$ builder
+
+$ mission --next
+ship useful software · learn in public · leave systems clearer than found
+
+$ contact --channel
+sumitchauhan10062004@gmail.com
+```
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake.svg" />
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/halloffame12/halloffame12/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 560px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.mobile.v2.svg" />
-    <source media="(max-width: 560px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.mobile.v2.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-light.v2.svg" />
-    <img alt="" src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/divider-dark.v2.svg" width="100%" />
-  </picture>
-</p>
-
-<h2 align="center" id="contact">🤝 Let's Build Something</h2>
-
-<p align="center">
-  💼 <strong>Recruiters &amp; Engineering Managers:</strong> Available for Software Engineering, AI tooling, and Backend Development intern roles.<br />
-  🚀 <strong>Founders &amp; Startups:</strong> End-to-end system design, real-time infrastructure, and cross-platform apps.<br />
-  🛠️ <strong>Open Source Maintainers:</strong> MCP servers, developer tooling, and low-level systems work.
+  <a href="mailto:sumitchauhan10062004@gmail.com"><img src="https://img.shields.io/badge/START%20A%20COLLABORATION-35D9FF?style=for-the-badge&labelColor=10172A&logo=rocket" alt="Start a collaboration" /></a>
 </p>
 
 <p align="center">
-  📬 <strong>Reach out:</strong> <code>sumitchauhan10062004@gmail.com</code> · <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/">LinkedIn</a> · <a href="https://sumitchauhan.me">sumitchauhan.me</a>
+  <img src="https://raw.githubusercontent.com/halloffame12/halloffame12/main/assets/ultimate/footer.svg" alt="Animated neon footer" width="100%" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-open_to_opportunities-00FF99?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/focus-AI_%C2%B7_backend_%C2%B7_tooling-181717?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/response_time-within_24h-3FB950?style=for-the-badge" />
-</p>
-
-<p align="center">
-  <a href="mailto:sumitchauhan10062004@gmail.com"><img src="https://img.shields.io/badge/%E2%96%B6_PRESS_START_TO_COLLABORATE-00FF99?style=for-the-badge&labelColor=0b0f1e&logoColor=black" alt="Press start to collaborate" width="360" /></a>
-</p>
-
----
-
-<p align="center">
-  <em>"Software that feels effortless is engineered with intent."</em><br /><br />
-  <img src="https://komarev.com/ghpvc/?username=halloffame12&color=00FF99&style=flat-square" alt="Profile views" />
-</p>
+<p align="center"><sub>Built with curiosity, shipped from Delhi NCR, India.</sub></p>

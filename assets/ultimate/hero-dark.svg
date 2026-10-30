@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Sumit Chauhan digital universe</title><desc id="desc">A dark cyberpunk dashboard with an animated grid, stars and developer identity.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080B16"/><stop offset=".55" stop-color="#10172A"/><stop offset="1" stop-color="#211633"/></linearGradient>
+<linearGradient id="line"><stop stop-color="#35D9FF"/><stop offset=".5" stop-color="#A78BFA"/><stop offset="1" stop-color="#FF5CA8"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#35D9FF" stroke-opacity=".1"/></pattern>
+</defs>
+<rect width="1200" height="360" rx="22" fill="url(#bg)"/><rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+<g fill="#E8EDF7"><circle cx="92" cy="72" r="2"/><circle cx="1080" cy="68" r="2"/><circle cx="1018" cy="278" r="1.5"/><circle cx="170" cy="278" r="1.5"/></g>
+<g fill="none" stroke="url(#line)" filter="url(#glow)" opacity=".8"><path d="M42 295H280l34-34h164" stroke-width="2"/><path d="M930 82h110l44 44h75" stroke-width="2"/><circle cx="314" cy="261" r="6"/><circle cx="1084" cy="126" r="6"/></g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><text x="78" y="106" fill="#35D9FF" font-size="16" letter-spacing="4">SYSTEM ONLINE // PLAYER 01</text><text x="78" y="176" fill="#E8EDF7" font-size="56" font-weight="800">SUMIT CHAUVAN</text><text x="82" y="216" fill="#A3FF7A" font-size="20">software engineer · open-source builder · AI tooling</text><text x="82" y="270" fill="#A78BFA" font-size="15">[ rust ] [ mcp ] [ code intelligence ] [ real-time systems ]</text></g>
+<g transform="translate(1010 210)" stroke="#FF5CA8" fill="none" stroke-width="2" opacity=".8"><path d="M0 52L46 0l46 52-46 52z"/><path d="M23 52L46 26l23 26-23 26z"/></g>
+<style>@keyframes drift{to{transform:translateX(18px)}}.drift{animation:drift 7s ease-in-out infinite alternate}</style><g class="drift" fill="#35D9FF"><circle cx="580" cy="74" r="3"/><circle cx="615" cy="74" r="2"/></g>
+</svg>
