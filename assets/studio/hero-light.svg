@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sumit Chauhan — engineering field notes</title>
+  <desc id="desc">A light editorial poster with a lime index mark, a code graph, and Sumit's name.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#193329" stroke-opacity=".1"/></pattern>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="0" flood-color="#193329" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1200" height="360" rx="20" fill="#f3f6e9"/>
+  <rect width="1200" height="360" rx="20" fill="url(#grid)"/>
+  <path d="M0 282h1200" stroke="#7ea72f" stroke-width="3"/>
+  <g filter="url(#shadow)">
+    <rect x="58" y="52" width="510" height="180" rx="12" fill="#193329"/>
+    <path d="M88 86h190M88 103h250M88 120h130" stroke="#bed0bb" stroke-width="5" stroke-linecap="round"/>
+    <text x="88" y="177" fill="#f3f6e9" font-family="Georgia,serif" font-size="54" font-weight="700">SUMIT</text>
+    <text x="88" y="215" fill="#f07a58" font-family="Georgia,serif" font-size="34" font-weight="700">CHAUVAN</text>
+  </g>
+  <g fill="none" stroke="#527b35" stroke-width="3">
+    <path d="M760 84l80 54-80 54M860 192l54-108"/>
+    <circle cx="760" cy="84" r="7" fill="#e65d3f"/><circle cx="840" cy="138" r="7" fill="#7ea72f"/><circle cx="760" cy="192" r="7" fill="#16869a"/><circle cx="914" cy="84" r="7" fill="#e65d3f"/>
+  </g>
+  <text x="650" y="78" fill="#527b35" font-family="ui-monospace,monospace" font-size="14" letter-spacing="3">FIELD NOTE / 001</text>
+  <text x="650" y="122" fill="#193329" font-family="Georgia,serif" font-size="32">software with a point of view.</text>
+  <text x="650" y="165" fill="#527b35" font-family="ui-monospace,monospace" font-size="15">rust · products · open source · good systems</text>
+  <text x="650" y="220" fill="#193329" font-family="ui-monospace,monospace" font-size="13">DELHI / IIT PATNA / BUILDING IN PUBLIC</text>
+  <g fill="#7ea72f"><circle cx="650" cy="302" r="5"/><circle cx="672" cy="302" r="3"/><circle cx="689" cy="302" r="4"/></g>
+  <text x="715" y="308" fill="#527b35" font-family="ui-monospace,monospace" font-size="12" letter-spacing="2">OPEN / CURIOUS / ITERATING</text>
+</svg>
