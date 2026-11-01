@@ -37,10 +37,6 @@
     "totalContributions": 709,
     "months": [
       {
-        "name": "Oct",
-        "firstDay": "2025-10-01"
-      },
-      {
         "name": "Nov",
         "firstDay": "2025-11-01"
       },
@@ -87,48 +83,13 @@
       {
         "name": "Oct",
         "firstDay": "2026-10-01"
+      },
+      {
+        "name": "Nov",
+        "firstDay": "2026-11-01"
       }
     ],
     "weeks": [
-      {
-        "contributionDays": [
-          {
-            "date": "2025-10-26",
-            "weekday": 0,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-10-27",
-            "weekday": 1,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-10-28",
-            "weekday": 2,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-10-29",
-            "weekday": 3,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-10-30",
-            "weekday": 4,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-10-31",
-            "weekday": 5,
-            "contributionCount": 0
-          },
-          {
-            "date": "2025-11-01",
-            "weekday": 6,
-            "contributionCount": 0
-          }
-        ]
-      },
       {
         "contributionDays": [
           {
@@ -2154,6 +2115,15 @@
             "date": "2026-10-31",
             "weekday": 6,
             "contributionCount": 1
+          }
+        ]
+      },
+      {
+        "contributionDays": [
+          {
+            "date": "2026-11-01",
+            "weekday": 0,
+            "contributionCount": 0
           }
         ]
       }
